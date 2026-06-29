@@ -2,6 +2,7 @@ package de.snenjih.mandatory.mixin;
 
 import de.snenjih.mandatory.modules.impl.shulker_tooltip.ShulkerTooltipData;
 import de.snenjih.mandatory.modules.impl.shulker_tooltip.ShulkerTooltipModule;
+import net.minecraft.client.util.InputUtil;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -34,7 +35,7 @@ public class ShulkerTooltipItemMixin {
             module.getTotalSlots(self),
             module.maxRowSize.get(),
             module.shortCounts.get(),
-            module.compactMode.get(),
+            module.shouldUseCompactMode(),
             module.getBackgroundColor(self)
         )));
     }
@@ -54,7 +55,14 @@ public class ShulkerTooltipItemMixin {
         if (tooltip == null) return;
 
         if (!module.isPreviewActive()) {
-            tooltip.add(Text.literal("Hold Shift to preview").styled(s -> s.withColor(0xAAAAAA)));
+            int keyCode = module.previewKey.get();
+            String keyName;
+            try {
+                keyName = InputUtil.Type.KEYSYM.createFromCode(keyCode).getLocalizedText().getString();
+            } catch (Exception e) {
+                keyName = "Shift";
+            }
+            tooltip.add(Text.literal("Hold " + keyName + " to preview").styled(s -> s.withColor(0xAAAAAA)));
         }
     }
 }

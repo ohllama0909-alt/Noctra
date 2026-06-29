@@ -4,6 +4,7 @@ import de.snenjih.mandatory.modules.api.BaseModule;
 import de.snenjih.mandatory.modules.api.ModuleCategory;
 import de.snenjih.mandatory.modules.api.settings.BooleanSetting;
 import de.snenjih.mandatory.modules.api.settings.IntSetting;
+import de.snenjih.mandatory.modules.api.settings.KeybindSetting;
 import de.snenjih.mandatory.modules.api.settings.ModuleSetting;
 import net.minecraft.block.ShulkerBoxBlock;
 import net.minecraft.client.MinecraftClient;
@@ -27,12 +28,17 @@ public class ShulkerTooltipModule extends BaseModule {
     public static ShulkerTooltipModule INSTANCE;
 
     public final ModuleSetting<Boolean> alwaysOn;
+    public final ModuleSetting<Integer> previewKey;
+    public final ModuleSetting<Integer> fullPreviewKey;
+    public final ModuleSetting<Boolean> swapModes;
+    public final ModuleSetting<Boolean> compactMode;
+    public final ModuleSetting<Boolean> compactSortByCount;
+    public final ModuleSetting<Integer> maxRowSize;
+    public final ModuleSetting<Boolean> shortCounts;
+    public final ModuleSetting<Boolean> genericContainerPreview;
     public final ModuleSetting<Boolean> showBundles;
     public final ModuleSetting<Boolean> coloredPreview;
     public final ModuleSetting<Boolean> showKeyHint;
-    public final ModuleSetting<Boolean> compactMode;
-    public final ModuleSetting<Boolean> shortCounts;
-    public final ModuleSetting<Integer> maxRowSize;
 
     public ShulkerTooltipModule() {
         super(
@@ -44,33 +50,70 @@ public class ShulkerTooltipModule extends BaseModule {
         );
         INSTANCE = this;
 
-        alwaysOn       = addSetting(new BooleanSetting("always_on",      "Always Show Preview",  false));
-        showBundles    = addSetting(new BooleanSetting("show_bundles",    "Preview Bundles",      true));
-        coloredPreview = addSetting(new BooleanSetting("colored_preview", "Colored Background",   true));
-        showKeyHint    = addSetting(new BooleanSetting("show_key_hint",   "Show Key Hint",        true));
-        compactMode    = addSetting(new BooleanSetting("compact_mode",    "Compact Mode",         false));
-        shortCounts    = addSetting(new BooleanSetting("short_counts",    "Short Item Counts",    true));
-        maxRowSize     = addSetting(new IntSetting    ("max_row_size",    "Max Items Per Row",    9, 1, 18));
+        beginSection("Preview");
+        alwaysOn              = addSetting(new BooleanSetting("always_on",                 "Always Show Preview",       false));
+        previewKey            = addSetting(new KeybindSetting("preview_key",               "Preview Key",               GLFW.GLFW_KEY_LEFT_SHIFT));
+        fullPreviewKey        = addSetting(new KeybindSetting("full_preview_key",          "Full Preview Key",          GLFW.GLFW_KEY_LEFT_ALT));
+        swapModes             = addSetting(new BooleanSetting("swap_modes",                "Swap Preview Modes",        false));
+        compactMode           = addSetting(new BooleanSetting("compact_mode",              "Compact Mode",              false));
+        compactSortByCount    = addSetting(new BooleanSetting("compact_sort_by_count",     "Sort Compact by Count",     true));
+        maxRowSize            = addSetting(new IntSetting    ("max_row_size",              "Max Items Per Row",         9, 1, 18));
+        shortCounts           = addSetting(new BooleanSetting("short_counts",              "Short Item Counts",         true));
+        genericContainerPreview = addSetting(new BooleanSetting("generic_container_preview", "Generic Container Preview", true));
+
+        beginSection("Display");
+        coloredPreview        = addSetting(new BooleanSetting("colored_preview",           "Colored Background",        true));
+        showKeyHint           = addSetting(new BooleanSetting("show_key_hint",             "Show Key Hint",             true));
+        showBundles           = addSetting(new BooleanSetting("show_bundles",              "Preview Bundles",           true));
     }
 
-    /** Returns true if the preview key (Shift) is held or alwaysOn is set. */
+    /** Returns true if the preview key is held or alwaysOn is set. */
     public boolean isPreviewActive() {
         if (alwaysOn.get()) return true;
         MinecraftClient mc = MinecraftClient.getInstance();
         if (mc.getWindow() == null) return false;
-        return InputUtil.isKeyPressed(mc.getWindow(), GLFW.GLFW_KEY_LEFT_SHIFT)
+        return InputUtil.isKeyPressed(mc.getWindow(), previewKey.get())
             || InputUtil.isKeyPressed(mc.getWindow(), GLFW.GLFW_KEY_RIGHT_SHIFT);
+    }
+
+    /** Returns true if the full-preview override key is held. */
+    public boolean isFullPreviewKeyHeld() {
+        MinecraftClient mc = MinecraftClient.getInstance();
+        if (mc.getWindow() == null) return false;
+        return InputUtil.isKeyPressed(mc.getWindow(), fullPreviewKey.get());
+    }
+
+    /**
+     * Determines whether compact mode should be active.
+     * Normal: previewKey shows compact (if compactMode=true), fullPreviewKey overrides to full.
+     * Swapped: previewKey always shows full, fullPreviewKey overrides to compact.
+     */
+    public boolean shouldUseCompactMode() {
+        boolean base = compactMode.get();
+        boolean fullKeyHeld = isFullPreviewKeyHeld();
+        if (swapModes.get()) {
+            // swapped: previewKey=full, fullPreviewKey=compact
+            return fullKeyHeld || base;
+        } else {
+            // normal: previewKey=compact (respects compactMode), fullPreviewKey=full override
+            return base && !fullKeyHeld;
+        }
     }
 
     /**
      * Returns the list of items for this container stack, or null if not a supported container.
      * Full mode: 27-slot list preserving slot positions (may contain empty stacks).
-     * Compact mode: merged, sorted list of non-empty items only.
+     * Compact mode: merged list of non-empty items only.
      */
     public List<ItemStack> getContainerItems(ItemStack stack) {
         ContainerComponent container = stack.get(DataComponentTypes.CONTAINER);
         if (container != null) {
-            if (compactMode.get()) {
+            if (!genericContainerPreview.get()
+                    && !(stack.getItem() instanceof BlockItem bi && bi.getBlock() instanceof ShulkerBoxBlock)) {
+                return null;
+            }
+            boolean useCompact = shouldUseCompactMode();
+            if (useCompact) {
                 return mergeItems(container.streamNonEmpty()
                     .map(ItemStack::copy)
                     .collect(Collectors.toList()));
@@ -86,7 +129,7 @@ public class ShulkerTooltipModule extends BaseModule {
                 List<ItemStack> bundleItems = bundle.stream()
                     .map(ItemStack::copy)
                     .collect(Collectors.toList());
-                if (compactMode.get()) {
+                if (shouldUseCompactMode()) {
                     return mergeItems(bundleItems);
                 }
                 return bundleItems;
@@ -123,19 +166,19 @@ public class ShulkerTooltipModule extends BaseModule {
         return 0xAA0D1B2A;
     }
 
-    /** Merge items of same type, summing counts, sorted by count descending. */
-    private static List<ItemStack> mergeItems(List<ItemStack> input) {
+    /** Merge items of same type, summing counts. Optionally sorted by count descending. */
+    private List<ItemStack> mergeItems(List<ItemStack> input) {
         Map<Item, Integer> counts = new LinkedHashMap<>();
         for (ItemStack s : input) {
-            if (!s.isEmpty()) {
-                counts.merge(s.getItem(), s.getCount(), Integer::sum);
-            }
+            if (!s.isEmpty()) counts.merge(s.getItem(), s.getCount(), Integer::sum);
         }
         List<ItemStack> result = new ArrayList<>();
         for (Map.Entry<Item, Integer> e : counts.entrySet()) {
             result.add(new ItemStack(e.getKey(), e.getValue()));
         }
-        result.sort(Comparator.comparingInt((ItemStack s) -> -s.getCount()));
+        if (compactSortByCount.get()) {
+            result.sort(Comparator.comparingInt((ItemStack s) -> -s.getCount()));
+        }
         return result;
     }
 }

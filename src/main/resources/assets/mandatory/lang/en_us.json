@@ -650,10 +650,15 @@
   "mandatory.module.shulker_tooltip.name": "Shulker Tooltip",
   "mandatory.module.shulker_tooltip.description": "Shows shulker box and bundle contents as a preview grid. Hold Shift to show.",
   "mandatory.shulker_tooltip.always_on": "Always Show Preview",
-  "mandatory.shulker_tooltip.show_bundles": "Preview Bundles",
+  "mandatory.shulker_tooltip.preview_key": "Preview Key",
+  "mandatory.shulker_tooltip.full_preview_key": "Full Preview Key",
+  "mandatory.shulker_tooltip.swap_modes": "Swap Preview Modes",
+  "mandatory.shulker_tooltip.compact_mode": "Compact Mode",
+  "mandatory.shulker_tooltip.compact_sort_by_count": "Sort Compact by Count",
+  "mandatory.shulker_tooltip.max_row_size": "Max Items Per Row",
+  "mandatory.shulker_tooltip.short_counts": "Short Item Counts",
+  "mandatory.shulker_tooltip.generic_container_preview": "Generic Container Preview",
   "mandatory.shulker_tooltip.colored_preview": "Colored Background",
   "mandatory.shulker_tooltip.show_key_hint": "Show Key Hint",
-  "mandatory.shulker_tooltip.compact_mode": "Compact Mode",
-  "mandatory.shulker_tooltip.short_counts": "Short Item Counts",
-  "mandatory.shulker_tooltip.max_row_size": "Max Items Per Row"
+  "mandatory.shulker_tooltip.show_bundles": "Preview Bundles"
 }
