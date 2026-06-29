@@ -82,6 +82,10 @@ import de.snenjih.mandatory.modules.impl.light_level_overlay.LightLevelOverlayMo
 import de.snenjih.mandatory.modules.impl.chest_highlight.ChestHighlightModule;
 import de.snenjih.mandatory.modules.impl.cave_finder.CaveFinderModule;
 import de.snenjih.mandatory.modules.impl.slime_chunks.SlimeChunksModule;
+import de.snenjih.mandatory.modules.impl.shulker_tooltip.ShulkerTooltipComponent;
+import de.snenjih.mandatory.modules.impl.shulker_tooltip.ShulkerTooltipData;
+import de.snenjih.mandatory.modules.impl.shulker_tooltip.ShulkerTooltipModule;
+import net.fabricmc.fabric.api.client.rendering.v1.TooltipComponentCallback;
 import de.snenjih.mandatory.cosmetics.network.CosmeticNetworkHandler;
 import de.snenjih.mandatory.cosmetics.render.CosmeticFeatureRenderer;
 import de.snenjih.mandatory.cosmetics.render.ParticleEmitter;
@@ -320,6 +324,14 @@ public class MandatoryMod implements ClientModInitializer {
         registry.register(new ChestHighlightModule());
         registry.register(new CaveFinderModule());
         registry.register(new SlimeChunksModule());
+        registry.register(new ShulkerTooltipModule());
+
+        // Register ShulkerTooltip tooltip component factory
+        TooltipComponentCallback.EVENT.register(data -> {
+            if (data instanceof ShulkerTooltipData std)
+                return new ShulkerTooltipComponent(std);
+            return null;
+        });
 
         // Right-Shift opens the Mandatory menu from in-game
         KeyBinding openMenuKey = KeyBindingHelper.registerKeyBinding(

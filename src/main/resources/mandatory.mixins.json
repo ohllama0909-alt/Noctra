@@ -30,7 +30,8 @@
     "BossBarCustomizerMixin",
     "DamageIndicatorMixin",
     "MouseButtonMixin",
-    "ChatHudMixin"
+    "ChatHudMixin",
+    "ShulkerTooltipItemMixin"
   ],
   "injectors": {
     "defaultRequire": 1

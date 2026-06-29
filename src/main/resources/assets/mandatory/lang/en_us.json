@@ -645,5 +645,15 @@
   "mandatory.slime_chunks.radius": "Chunk Radius",
   "mandatory.slime_chunks.show_non_slime": "Show Non-Slime",
   "mandatory.slime_chunks.opacity": "Overlay Opacity",
-  "mandatory.slime_chunks.height_offset": "Y Offset"
+  "mandatory.slime_chunks.height_offset": "Y Offset",
+
+  "mandatory.module.shulker_tooltip.name": "Shulker Tooltip",
+  "mandatory.module.shulker_tooltip.description": "Shows shulker box and bundle contents as a preview grid. Hold Shift to show.",
+  "mandatory.shulker_tooltip.always_on": "Always Show Preview",
+  "mandatory.shulker_tooltip.show_bundles": "Preview Bundles",
+  "mandatory.shulker_tooltip.colored_preview": "Colored Background",
+  "mandatory.shulker_tooltip.show_key_hint": "Show Key Hint",
+  "mandatory.shulker_tooltip.compact_mode": "Compact Mode",
+  "mandatory.shulker_tooltip.short_counts": "Short Item Counts",
+  "mandatory.shulker_tooltip.max_row_size": "Max Items Per Row"
 }
