@@ -1,5 +1,6 @@
 package de.snenjih.mandatory.menu;
 
+import de.snenjih.mandatory.menu.AccountScreen;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.gui.Click;
 import net.minecraft.client.gui.DrawContext;
@@ -23,6 +24,7 @@ public class MainMenuScreen extends Screen {
     private int btnModMenuX, btnModMenuY, btnModMenuW, btnModMenuH;
     private int btnScrX, btnScrY, btnScrW, btnScrH;
     private int btnCosX, btnCosY, btnCosW, btnCosH;
+    private int btnAccX, btnAccY, btnAccW, btnAccH;
 
     public MainMenuScreen(Screen parent) {
         super(Text.translatable("mandatory.main.title"));
@@ -83,6 +85,15 @@ public class MainMenuScreen extends Screen {
         renderButton(ctx, btnCosX, btnCosY, btnCosW, btnCosH,
                 Text.translatable("mandatory.main.cosmetics").getString(), hoverCos, false);
 
+        // ACCOUNTS button (240×24)
+        btnAccW = 240; btnAccH = 24;
+        btnAccX = width / 2 - btnAccW / 2;
+        btnAccY = btnCosY + btnCosH + 8;
+        boolean hoverAcc = mouseX >= btnAccX && mouseX <= btnAccX + btnAccW
+                        && mouseY >= btnAccY && mouseY <= btnAccY + btnAccH;
+        renderButton(ctx, btnAccX, btnAccY, btnAccW, btnAccH,
+                Text.translatable("mandatory.main.accounts").getString(), hoverAcc, false);
+
         // Version text (bottom-right)
         String version = "v" + getModVersion();
         ctx.drawTextWithShadow(textRenderer, version,
@@ -120,6 +131,12 @@ public class MainMenuScreen extends Screen {
          && my >= btnCosY && my <= btnCosY + btnCosH) {
             assert client != null;
             client.setScreen(new CosmeticsScreen(this));
+            return true;
+        }
+        if (mx >= btnAccX && mx <= btnAccX + btnAccW
+         && my >= btnAccY && my <= btnAccY + btnAccH) {
+            assert client != null;
+            client.setScreen(new AccountScreen(this));
             return true;
         }
         return super.mouseClicked(click, releaseOnly);

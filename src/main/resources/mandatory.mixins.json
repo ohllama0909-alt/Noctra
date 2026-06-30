@@ -31,7 +31,9 @@
     "DamageIndicatorMixin",
     "MouseButtonMixin",
     "ChatHudMixin",
-    "ShulkerTooltipItemMixin"
+    "ShulkerTooltipItemMixin",
+    "TitleScreenMixin",
+    "accessor.MinecraftClientSessionAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

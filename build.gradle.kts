@@ -25,6 +25,7 @@ java {
 repositories {
     mavenCentral()
     maven("https://maven.fabricmc.net/")
+    maven("https://maven.lenni0451.net/releases")
 }
 
 dependencies {
@@ -32,6 +33,7 @@ dependencies {
     mappings("net.fabricmc:yarn:${yarnMappings}:v2")
     modImplementation("net.fabricmc:fabric-loader:${loaderVersion}")
     modImplementation("net.fabricmc.fabric-api:fabric-api:${fabricApiVersion}")
+    include(implementation("net.raphimc:MinecraftAuth:4.1.1")!!)
 }
 
 loom {

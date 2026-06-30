@@ -1,5 +1,8 @@
 package de.snenjih.mandatory;
 
+import de.snenjih.mandatory.auth.AccountManager;
+import de.snenjih.mandatory.auth.AccountStorage;
+import de.snenjih.mandatory.auth.SkinCache;
 import de.snenjih.mandatory.chat.ChatCommandDispatcher;
 import de.snenjih.mandatory.config.ModConfig;
 import de.snenjih.mandatory.hud.NotificationManager;
@@ -126,6 +129,13 @@ public class MandatoryMod implements ClientModInitializer {
     public void onInitializeClient() {
         ModConfig config = new ModConfig();
         config.load();
+
+        // Account Switcher — must be initialized before any screen renders
+        AccountStorage accountStorage = AccountStorage.load();
+        SkinCache skinCache = new SkinCache();
+        AccountManager.init(accountStorage, skinCache);
+        // Preload skins for all saved accounts
+        accountStorage.getAll().forEach(e -> skinCache.ensureLoaded(e.uuid(), e.skinUrl()));
 
         ModuleRegistry registry = ModuleRegistry.create(config);
         registry.register(new ModSettingsModule());
