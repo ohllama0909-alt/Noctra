@@ -4,14 +4,14 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/target_hp/TargetHpModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.target_hp`
+**Package:** `de.snenjih.noctra.modules.impl.target_hp`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/target_hp/TargetHpModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.target_hp`
+- Package: `de.snenjih.noctra.modules.impl.target_hp`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 - `ColorSetting` für Farbwerte verwenden statt rohem `IntSetting`
 
 ## Description
@@ -106,22 +106,22 @@ onRenderHud(DrawContext ctx, float tickDelta):
 ## Translation Keys
 
 ```json
-"mandatory.target_hp.name": "Target HP",
-"mandatory.target_hp.description": "Displays the health of the entity you are currently targeting.",
-"mandatory.target_hp.x_pos": "X Position",
-"mandatory.target_hp.y_pos": "Y Position",
-"mandatory.target_hp.show_bar": "Show Bar",
-"mandatory.target_hp.show_numbers": "Show Numbers",
-"mandatory.target_hp.show_name": "Show Name",
-"mandatory.target_hp.bar_width": "Bar Width",
-"mandatory.target_hp.color_high": "Color High",
-"mandatory.target_hp.color_mid": "Color Mid",
-"mandatory.target_hp.color_low": "Color Low",
-"mandatory.target_hp.background": "Background"
+"noctra.target_hp.name": "Target HP",
+"noctra.target_hp.description": "Displays the health of the entity you are currently targeting.",
+"noctra.target_hp.x_pos": "X Position",
+"noctra.target_hp.y_pos": "Y Position",
+"noctra.target_hp.show_bar": "Show Bar",
+"noctra.target_hp.show_numbers": "Show Numbers",
+"noctra.target_hp.show_name": "Show Name",
+"noctra.target_hp.bar_width": "Bar Width",
+"noctra.target_hp.color_high": "Color High",
+"noctra.target_hp.color_mid": "Color Mid",
+"noctra.target_hp.color_low": "Color Low",
+"noctra.target_hp.background": "Background"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/target_hp.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/target_hp.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Herz-Symbol (Minecraft-Style) mit einem Fadenkreuz oder Pfeil darauf; roter Balken darunter. Erinnert an den Vanilla-HP-Balken, aber mit Ziel-Overlay.

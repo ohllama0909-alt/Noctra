@@ -4,7 +4,7 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/item_counter/ItemCounterModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.item_counter`
+**Package:** `de.snenjih.noctra.modules.impl.item_counter`
 
 ## Description
 
@@ -148,42 +148,42 @@ record TrackedItem(String label, int count, boolean warning) {}
 ## Translation Keys
 
 ```json
-"mandatory.item_counter.name": "Item Counter",
-"mandatory.item_counter.description": "Tracks and displays counts of up to 6 custom items in your inventory.",
-"mandatory.item_counter.bg_color": "Background Color",
-"mandatory.item_counter.border_color": "Border Color",
-"mandatory.item_counter.text_color": "Text Color",
-"mandatory.item_counter.text_shadow": "Text Shadow",
-"mandatory.item_counter.text_scale": "Text Scale",
-"mandatory.item_counter.show_background": "Show Background",
-"mandatory.item_counter.item_1": "Item 1 ID",
-"mandatory.item_counter.label_1": "Item 1 Label",
-"mandatory.item_counter.warn_1": "Item 1 Warn ≤",
-"mandatory.item_counter.item_2": "Item 2 ID",
-"mandatory.item_counter.label_2": "Item 2 Label",
-"mandatory.item_counter.warn_2": "Item 2 Warn ≤",
-"mandatory.item_counter.item_3": "Item 3 ID",
-"mandatory.item_counter.label_3": "Item 3 Label",
-"mandatory.item_counter.warn_3": "Item 3 Warn ≤",
-"mandatory.item_counter.item_4": "Item 4 ID",
-"mandatory.item_counter.label_4": "Item 4 Label",
-"mandatory.item_counter.warn_4": "Item 4 Warn ≤",
-"mandatory.item_counter.item_5": "Item 5 ID",
-"mandatory.item_counter.label_5": "Item 5 Label",
-"mandatory.item_counter.warn_5": "Item 5 Warn ≤",
-"mandatory.item_counter.item_6": "Item 6 ID",
-"mandatory.item_counter.label_6": "Item 6 Label",
-"mandatory.item_counter.warn_6": "Item 6 Warn ≤",
-"mandatory.item_counter.include_offhand": "Include Offhand",
-"mandatory.item_counter.include_armor": "Include Armor",
-"mandatory.item_counter.color_warn": "Warn Color",
-"mandatory.item_counter.color_ok": "OK Color",
-"mandatory.item_counter.hide_empty": "Hide Empty Slots",
-"mandatory.item_counter.show_icons": "Show Item Icons"
+"noctra.item_counter.name": "Item Counter",
+"noctra.item_counter.description": "Tracks and displays counts of up to 6 custom items in your inventory.",
+"noctra.item_counter.bg_color": "Background Color",
+"noctra.item_counter.border_color": "Border Color",
+"noctra.item_counter.text_color": "Text Color",
+"noctra.item_counter.text_shadow": "Text Shadow",
+"noctra.item_counter.text_scale": "Text Scale",
+"noctra.item_counter.show_background": "Show Background",
+"noctra.item_counter.item_1": "Item 1 ID",
+"noctra.item_counter.label_1": "Item 1 Label",
+"noctra.item_counter.warn_1": "Item 1 Warn ≤",
+"noctra.item_counter.item_2": "Item 2 ID",
+"noctra.item_counter.label_2": "Item 2 Label",
+"noctra.item_counter.warn_2": "Item 2 Warn ≤",
+"noctra.item_counter.item_3": "Item 3 ID",
+"noctra.item_counter.label_3": "Item 3 Label",
+"noctra.item_counter.warn_3": "Item 3 Warn ≤",
+"noctra.item_counter.item_4": "Item 4 ID",
+"noctra.item_counter.label_4": "Item 4 Label",
+"noctra.item_counter.warn_4": "Item 4 Warn ≤",
+"noctra.item_counter.item_5": "Item 5 ID",
+"noctra.item_counter.label_5": "Item 5 Label",
+"noctra.item_counter.warn_5": "Item 5 Warn ≤",
+"noctra.item_counter.item_6": "Item 6 ID",
+"noctra.item_counter.label_6": "Item 6 Label",
+"noctra.item_counter.warn_6": "Item 6 Warn ≤",
+"noctra.item_counter.include_offhand": "Include Offhand",
+"noctra.item_counter.include_armor": "Include Armor",
+"noctra.item_counter.color_warn": "Warn Color",
+"noctra.item_counter.color_ok": "OK Color",
+"noctra.item_counter.hide_empty": "Hide Empty Slots",
+"noctra.item_counter.show_icons": "Show Item Icons"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/item_counter.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/item_counter.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Inventar-Slot-Rahmen mit einem Totem-Icon und einer Zahl "2" in der Ecke. Pixel-Art.

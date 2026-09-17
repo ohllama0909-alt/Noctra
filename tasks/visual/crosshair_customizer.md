@@ -4,12 +4,12 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/crosshair_customizer/CrosshairCustomizerModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.crosshair_customizer`
+**Package:** `de.snenjih.noctra.modules.impl.crosshair_customizer`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/crosshair_customizer/CrosshairCustomizerModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.crosshair_customizer`
+- Package: `de.snenjih.noctra.modules.impl.crosshair_customizer`
 - Implementiert HudElement: Ja — rendert eigenes Crosshair via `onRenderHud`
 - `ColorSetting` für Crosshair-Farbe verwenden
 
@@ -124,27 +124,27 @@ Hilfsmethode drawLine(ctx, x1, y1, x2, y2, color, gap):
 - `gap >= size`: Crosshair wäre unsichtbar (Lücke größer als Arm). Kein Crash, aber keine sichtbare Linie.
 - `thickness` gerade vs. ungerade: `half = thick / 2` arbeitet mit Ganzzahlen — ungerade Thickness führt zu 1px-Asymmetrie, akzeptabel.
 - `dynamicColor` ohne angezieltes Entity (`mc.targetedEntity == null`): Standard-`color` wird verwendet.
-- Mixin-Registrierung: `CrosshairMixin` in `mandatory.mixins.json` eintragen.
+- Mixin-Registrierung: `CrosshairMixin` in `noctra.mixins.json` eintragen.
 
 ## Translation Keys
 
 ```json
-"mandatory.crosshair_customizer.name": "Crosshair Customizer",
-"mandatory.crosshair_customizer.description": "Replaces the vanilla crosshair with a fully customizable one.",
-"mandatory.crosshair_customizer.color": "Color",
-"mandatory.crosshair_customizer.size": "Size",
-"mandatory.crosshair_customizer.thickness": "Thickness",
-"mandatory.crosshair_customizer.gap": "Gap",
-"mandatory.crosshair_customizer.dot": "Center Dot",
-"mandatory.crosshair_customizer.dot_size": "Dot Size",
-"mandatory.crosshair_customizer.outline": "Outline",
-"mandatory.crosshair_customizer.outline_color": "Outline Color",
-"mandatory.crosshair_customizer.dynamic_color": "Dynamic Color",
-"mandatory.crosshair_customizer.enemy_color": "Enemy Color"
+"noctra.crosshair_customizer.name": "Crosshair Customizer",
+"noctra.crosshair_customizer.description": "Replaces the vanilla crosshair with a fully customizable one.",
+"noctra.crosshair_customizer.color": "Color",
+"noctra.crosshair_customizer.size": "Size",
+"noctra.crosshair_customizer.thickness": "Thickness",
+"noctra.crosshair_customizer.gap": "Gap",
+"noctra.crosshair_customizer.dot": "Center Dot",
+"noctra.crosshair_customizer.dot_size": "Dot Size",
+"noctra.crosshair_customizer.outline": "Outline",
+"noctra.crosshair_customizer.outline_color": "Outline Color",
+"noctra.crosshair_customizer.dynamic_color": "Dynamic Color",
+"noctra.crosshair_customizer.enemy_color": "Enemy Color"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/crosshair_customizer.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/crosshair_customizer.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Fadenkreuz (+) in der Mitte, farbig (cyan oder weiß) auf dunklem Hintergrund. Das Crosshair hat einen kleinen Dot in der Mitte und erkennbare Lücken zwischen Zentrum und Armen.

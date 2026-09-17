@@ -4,14 +4,14 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/potion_effects_hud/PotionEffectsHudModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.potion_effects_hud`
+**Package:** `de.snenjih.noctra.modules.impl.potion_effects_hud`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/potion_effects_hud/PotionEffectsHudModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.potion_effects_hud`
+- Package: `de.snenjih.noctra.modules.impl.potion_effects_hud`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 
 ## Description
 
@@ -122,22 +122,22 @@ Hilfsmethode toRoman(int n):
 ## Translation Keys
 
 ```json
-"mandatory.potion_effects_hud.name": "Potion Effects HUD",
-"mandatory.potion_effects_hud.description": "Displays active status effects with name, level, and remaining time.",
-"mandatory.potion_effects_hud.x_pos": "X Position",
-"mandatory.potion_effects_hud.y_pos": "Y Position",
-"mandatory.potion_effects_hud.show_icons": "Show Icons",
-"mandatory.potion_effects_hud.show_amplifier": "Show Amplifier",
-"mandatory.potion_effects_hud.show_time": "Show Time",
-"mandatory.potion_effects_hud.time_warn_seconds": "Time Warning (s)",
-"mandatory.potion_effects_hud.text_color": "Text Color",
-"mandatory.potion_effects_hud.warn_color": "Warn Color",
-"mandatory.potion_effects_hud.background": "Background",
-"mandatory.potion_effects_hud.row_height": "Row Height"
+"noctra.potion_effects_hud.name": "Potion Effects HUD",
+"noctra.potion_effects_hud.description": "Displays active status effects with name, level, and remaining time.",
+"noctra.potion_effects_hud.x_pos": "X Position",
+"noctra.potion_effects_hud.y_pos": "Y Position",
+"noctra.potion_effects_hud.show_icons": "Show Icons",
+"noctra.potion_effects_hud.show_amplifier": "Show Amplifier",
+"noctra.potion_effects_hud.show_time": "Show Time",
+"noctra.potion_effects_hud.time_warn_seconds": "Time Warning (s)",
+"noctra.potion_effects_hud.text_color": "Text Color",
+"noctra.potion_effects_hud.warn_color": "Warn Color",
+"noctra.potion_effects_hud.background": "Background",
+"noctra.potion_effects_hud.row_height": "Row Height"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/potion_effects_hud.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/potion_effects_hud.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Zwei oder drei Tränkeflaschen-Icons nebeneinander, eine davon mit einer kleinen Uhr/Timer-Anzeige darunter. Farben: violett/lila/türkis wie die Vanilla-Tränke.

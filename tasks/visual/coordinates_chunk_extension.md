@@ -4,7 +4,7 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/coordinates_hud/CoordinatesHudModule.java` (bestehend erweitern)  
-**Package:** `de.snenjih.mandatory.modules.impl.coordinates_hud`
+**Package:** `de.snenjih.noctra.modules.impl.coordinates_hud`
 
 ## Description
 
@@ -104,10 +104,10 @@ if (!inNether && !inOverworld && showNetherCoords.get()) → nicht rendern
 ## Translation Keys (neue Keys)
 
 ```json
-"mandatory.coordinates_hud.show_chunk_pos": "Show Chunk Position",
-"mandatory.coordinates_hud.show_within_chunk": "Show Within-Chunk Offset",
-"mandatory.coordinates_hud.show_nether_coords": "Show Nether Coords",
-"mandatory.coordinates_hud.show_region_file": "Show Region File"
+"noctra.coordinates_hud.show_chunk_pos": "Show Chunk Position",
+"noctra.coordinates_hud.show_within_chunk": "Show Within-Chunk Offset",
+"noctra.coordinates_hud.show_nether_coords": "Show Nether Coords",
+"noctra.coordinates_hud.show_region_file": "Show Region File"
 ```
 
 ## Kein neues Icon erforderlich

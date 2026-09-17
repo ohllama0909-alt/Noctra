@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="title.png" alt="MandatoryMod" width="600"/>
+  <img src="icon.png" alt="Noctra" width="200"/>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Snenjih/Mandatory/releases/latest"><img src="https://img.shields.io/github/v/release/Snenjih/Mandatory?style=flat-square&label=release" alt="Latest Release"/></a>
-  <a href="https://github.com/Snenjih/Mandatory/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/Snenjih/Mandatory/ci.yml?style=flat-square&label=build" alt="Build Status"/></a>
+  <a href="https://github.com/ohllama0909-alt/Noctra/releases/latest"><img src="https://img.shields.io/github/v/release/ohllama0909-alt/Noctra?style=flat-square&label=release" alt="Latest Release"/></a>
+  <a href="https://github.com/ohllama0909-alt/Noctra/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/ohllama0909-alt/Noctra/ci.yml?style=flat-square&label=build" alt="Build Status"/></a>
   <img src="https://img.shields.io/badge/Minecraft-1.21.11-green?style=flat-square" alt="Minecraft 1.21.11"/>
   <img src="https://img.shields.io/badge/Fabric-0.19.3-blue?style=flat-square" alt="Fabric"/>
   <img src="https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square" alt="MIT License"/>
@@ -12,7 +12,7 @@
 
 ---
 
-**MandatoryMod** is a client-side Fabric mod for Minecraft 1.21.11. It follows a vanilla+ philosophy — no new items, no new blocks, no server-side changes. Every feature is optional and toggled through an in-game carousel menu that opens from the pause screen.
+**Noctra** is a client-side Fabric mod for Minecraft 1.21.11. It follows a vanilla+ philosophy — no new items, no new blocks, no server-side changes. Every feature is optional and toggled through an in-game menu.
 
 ---
 
@@ -128,11 +128,11 @@
 
 ## Usage
 
-- Open the **Mandatory** menu from the pause screen.
-- Scroll through the module carousel to browse features.
-- Click the **Toggle** button to enable or disable the selected module.
-- Click the **Settings** icon (⚙) to configure module-specific options.
-- Enabled/disabled states and settings are saved automatically to `.minecraft/config/mandatory.json`.
+- Open the **Noctra** menu from the pause screen (or press Right-Shift).
+- Browse and configure features across all categories.
+- Click the toggle buttons to enable or disable modules.
+- Click the settings icon to configure module-specific options.
+- Enabled/disabled states and settings are saved automatically to `.minecraft/config/noctra.json`.
 
 ---
 
@@ -141,12 +141,12 @@
 **Requirements:** JDK 21, Git
 
 ```bash
-git clone https://github.com/Snenjih/Mandatory.git
-cd Mandatory
+git clone https://github.com/ohllama0909-alt/Noctra.git
+cd Noctra
 ./gradlew build
 ```
 
-The release JAR is produced at `build/libs/mandatory-<version>.jar`. The `-dev` and `-sources` variants are build artifacts only.
+The release JAR is produced at `build/libs/noctra-<version>.jar`. The `-dev` and `-sources` variants are build artifacts only.
 
 ```bash
 # Launch Minecraft with the mod loaded for testing
@@ -169,7 +169,7 @@ The release JAR is produced at `build/libs/mandatory-<version>.jar`. The `-dev` 
 
 ## Configuration
 
-Settings are stored in `.minecraft/config/mandatory.json`. The file is created automatically on first launch and is forwards-compatible — old configs are migrated automatically.
+Settings are stored in `.minecraft/config/noctra.json`. The file is created automatically on first launch and is backwards-compatible — legacy configs (`mandatory.json`) are migrated automatically.
 
 ---
 

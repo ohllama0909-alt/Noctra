@@ -63,7 +63,7 @@ handleBreak(client, player, brokenItem):
   replacement = findReplacement(player, brokenItem)
   if replacement == -1:
     if showNotification.get():
-      player.sendMessage(Text.translatable("mandatory.smart_replace.no_replacement",
+      player.sendMessage(Text.translatable("noctra.smart_replace.no_replacement",
           Text.translatable(brokenItem.getTranslationKey())), true)
     return
 
@@ -84,7 +84,7 @@ handleBreak(client, player, brokenItem):
 
   if showNotification.get():
     // Find new item name after swap — look at what's in hand now
-    player.sendMessage(Text.translatable("mandatory.smart_replace.replaced",
+    player.sendMessage(Text.translatable("noctra.smart_replace.replaced",
         Text.translatable(brokenItem.getTranslationKey())), true)
 
 findReplacement(player, brokenItem):
@@ -187,20 +187,20 @@ private void updateSnapshot(ClientPlayerEntity player)
 ## Translation Keys
 
 ```json
-"mandatory.smart_replace.name": "Smart Replace",
-"mandatory.smart_replace.description": "Automatically replaces a broken tool with the next best from your inventory.",
-"mandatory.smart_replace.search_inventory": "Search Inventory",
-"mandatory.smart_replace.match_mode": "Match Mode",
-"mandatory.smart_replace.prefer_best_durability": "Prefer Best Durability",
-"mandatory.smart_replace.show_notification": "Show Notification",
-"mandatory.smart_replace.replaced": "Replaced broken %s",
-"mandatory.smart_replace.no_replacement": "No replacement found for %s",
-"mandatory.smart_replace.match_mode.same_item": "Same Item",
-"mandatory.smart_replace.match_mode.same_family": "Same Family"
+"noctra.smart_replace.name": "Smart Replace",
+"noctra.smart_replace.description": "Automatically replaces a broken tool with the next best from your inventory.",
+"noctra.smart_replace.search_inventory": "Search Inventory",
+"noctra.smart_replace.match_mode": "Match Mode",
+"noctra.smart_replace.prefer_best_durability": "Prefer Best Durability",
+"noctra.smart_replace.show_notification": "Show Notification",
+"noctra.smart_replace.replaced": "Replaced broken %s",
+"noctra.smart_replace.no_replacement": "No replacement found for %s",
+"noctra.smart_replace.match_mode.same_item": "Same Item",
+"noctra.smart_replace.match_mode.same_family": "Same Family"
 ```
 
 ## Icon
 
-**Path:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/smart_replace.png`  
+**Path:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/smart_replace.png`  
 **Size:** 32×32 PNG  
 **Suggestion:** A cracked/broken pickaxe on the left with an arrow pointing right to an intact pickaxe. Use a red tint on the broken tool and a green or white tint on the replacement. Evokes "broken → replaced."

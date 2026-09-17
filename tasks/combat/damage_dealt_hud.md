@@ -4,7 +4,7 @@
 **Category:** COMBAT  
 **Status:** [x] DONE  
 **Class:** `modules/impl/damage_dealt_hud/DamageDealtHudModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.damage_dealt_hud`
+**Package:** `de.snenjih.noctra.modules.impl.damage_dealt_hud`
 
 ## Description
 
@@ -134,27 +134,27 @@ onRenderHud(ctx, tickDelta):
 ## Translation Keys
 
 ```json
-"mandatory.damage_dealt_hud.name": "Damage Dealt",
-"mandatory.damage_dealt_hud.description": "Shows the last damage dealt and session combat statistics.",
-"mandatory.damage_dealt_hud.bg_color": "Background Color",
-"mandatory.damage_dealt_hud.border_color": "Border Color",
-"mandatory.damage_dealt_hud.text_color": "Text Color",
-"mandatory.damage_dealt_hud.text_shadow": "Text Shadow",
-"mandatory.damage_dealt_hud.text_scale": "Text Scale",
-"mandatory.damage_dealt_hud.show_background": "Show Background",
-"mandatory.damage_dealt_hud.display_time": "Display Time (s)",
-"mandatory.damage_dealt_hud.show_total": "Show Session Total",
-"mandatory.damage_dealt_hud.show_max_hit": "Show Max Hit",
-"mandatory.damage_dealt_hud.show_dps": "Show DPS",
-"mandatory.damage_dealt_hud.fade_out": "Fade Out",
-"mandatory.damage_dealt_hud.damage_color": "Damage Color",
-"mandatory.damage_dealt_hud.crit_color": "Crit Hit Color",
-"mandatory.damage_dealt_hud.decimal_places": "Decimal Places",
-"mandatory.damage_dealt_hud.hide_when_zero": "Hide When Zero"
+"noctra.damage_dealt_hud.name": "Damage Dealt",
+"noctra.damage_dealt_hud.description": "Shows the last damage dealt and session combat statistics.",
+"noctra.damage_dealt_hud.bg_color": "Background Color",
+"noctra.damage_dealt_hud.border_color": "Border Color",
+"noctra.damage_dealt_hud.text_color": "Text Color",
+"noctra.damage_dealt_hud.text_shadow": "Text Shadow",
+"noctra.damage_dealt_hud.text_scale": "Text Scale",
+"noctra.damage_dealt_hud.show_background": "Show Background",
+"noctra.damage_dealt_hud.display_time": "Display Time (s)",
+"noctra.damage_dealt_hud.show_total": "Show Session Total",
+"noctra.damage_dealt_hud.show_max_hit": "Show Max Hit",
+"noctra.damage_dealt_hud.show_dps": "Show DPS",
+"noctra.damage_dealt_hud.fade_out": "Fade Out",
+"noctra.damage_dealt_hud.damage_color": "Damage Color",
+"noctra.damage_dealt_hud.crit_color": "Crit Hit Color",
+"noctra.damage_dealt_hud.decimal_places": "Decimal Places",
+"noctra.damage_dealt_hud.hide_when_zero": "Hide When Zero"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/damage_dealt_hud.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/damage_dealt_hud.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Rotes Herz mit einem Schwert-Symbol darüber und einer Zahl darunter. Aggressive Pixel-Art.

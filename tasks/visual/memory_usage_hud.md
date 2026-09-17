@@ -4,7 +4,7 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/memory_usage_hud/MemoryUsageHudModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.memory_usage_hud`
+**Package:** `de.snenjih.noctra.modules.impl.memory_usage_hud`
 
 ## Description
 
@@ -99,27 +99,27 @@ onRenderHud(ctx, tickDelta):
 ## Translation Keys
 
 ```json
-"mandatory.memory_usage_hud.name": "Memory Usage",
-"mandatory.memory_usage_hud.description": "Shows JVM heap memory usage on the HUD.",
-"mandatory.memory_usage_hud.bg_color": "Background Color",
-"mandatory.memory_usage_hud.border_color": "Border Color",
-"mandatory.memory_usage_hud.text_color": "Text Color",
-"mandatory.memory_usage_hud.text_shadow": "Text Shadow",
-"mandatory.memory_usage_hud.text_scale": "Text Scale",
-"mandatory.memory_usage_hud.show_background": "Show Background",
-"mandatory.memory_usage_hud.show_bar": "Show Bar",
-"mandatory.memory_usage_hud.show_max": "Show Max",
-"mandatory.memory_usage_hud.show_percentage": "Show Percent",
-"mandatory.memory_usage_hud.warn_threshold": "Warn Threshold (%)",
-"mandatory.memory_usage_hud.crit_threshold": "Crit Threshold (%)",
-"mandatory.memory_usage_hud.color_good": "Color Good",
-"mandatory.memory_usage_hud.color_warn": "Color Warn",
-"mandatory.memory_usage_hud.color_crit": "Color Critical",
-"mandatory.memory_usage_hud.unit": "Unit"
+"noctra.memory_usage_hud.name": "Memory Usage",
+"noctra.memory_usage_hud.description": "Shows JVM heap memory usage on the HUD.",
+"noctra.memory_usage_hud.bg_color": "Background Color",
+"noctra.memory_usage_hud.border_color": "Border Color",
+"noctra.memory_usage_hud.text_color": "Text Color",
+"noctra.memory_usage_hud.text_shadow": "Text Shadow",
+"noctra.memory_usage_hud.text_scale": "Text Scale",
+"noctra.memory_usage_hud.show_background": "Show Background",
+"noctra.memory_usage_hud.show_bar": "Show Bar",
+"noctra.memory_usage_hud.show_max": "Show Max",
+"noctra.memory_usage_hud.show_percentage": "Show Percent",
+"noctra.memory_usage_hud.warn_threshold": "Warn Threshold (%)",
+"noctra.memory_usage_hud.crit_threshold": "Crit Threshold (%)",
+"noctra.memory_usage_hud.color_good": "Color Good",
+"noctra.memory_usage_hud.color_warn": "Color Warn",
+"noctra.memory_usage_hud.color_crit": "Color Critical",
+"noctra.memory_usage_hud.unit": "Unit"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/memory_usage_hud.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/memory_usage_hud.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** RAM-Riegel Pixel-Art mit einem farbigen Füllbalken. Grün→Gelb→Rot Gradient.

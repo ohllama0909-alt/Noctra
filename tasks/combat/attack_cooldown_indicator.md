@@ -4,14 +4,14 @@
 **Category:** COMBAT  
 **Status:** [x] DONE  
 **Class:** `modules/impl/attack_cooldown_indicator/AttackCooldownIndicatorModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.attack_cooldown_indicator`
+**Package:** `de.snenjih.noctra.modules.impl.attack_cooldown_indicator`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/attack_cooldown_indicator/AttackCooldownIndicatorModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.attack_cooldown_indicator`
+- Package: `de.snenjih.noctra.modules.impl.attack_cooldown_indicator`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 - `ColorSetting` für Balkenfarben verwenden
 
 ## Description
@@ -110,21 +110,21 @@ Alternativ: Feste Defaults verwenden (z.B. 200/200) und den Nutzer manuell posit
 ## Translation Keys
 
 ```json
-"mandatory.attack_cooldown_indicator.name": "Attack Cooldown",
-"mandatory.attack_cooldown_indicator.description": "Shows your weapon attack cooldown as a customizable HUD bar.",
-"mandatory.attack_cooldown_indicator.x_pos": "X Position",
-"mandatory.attack_cooldown_indicator.y_pos": "Y Position",
-"mandatory.attack_cooldown_indicator.bar_width": "Bar Width",
-"mandatory.attack_cooldown_indicator.bar_height": "Bar Height",
-"mandatory.attack_cooldown_indicator.show_text": "Show Percentage",
-"mandatory.attack_cooldown_indicator.color_ready": "Ready Color",
-"mandatory.attack_cooldown_indicator.color_charging": "Charging Color",
-"mandatory.attack_cooldown_indicator.show_border": "Show Border",
-"mandatory.attack_cooldown_indicator.only_in_combat": "Only in Combat"
+"noctra.attack_cooldown_indicator.name": "Attack Cooldown",
+"noctra.attack_cooldown_indicator.description": "Shows your weapon attack cooldown as a customizable HUD bar.",
+"noctra.attack_cooldown_indicator.x_pos": "X Position",
+"noctra.attack_cooldown_indicator.y_pos": "Y Position",
+"noctra.attack_cooldown_indicator.bar_width": "Bar Width",
+"noctra.attack_cooldown_indicator.bar_height": "Bar Height",
+"noctra.attack_cooldown_indicator.show_text": "Show Percentage",
+"noctra.attack_cooldown_indicator.color_ready": "Ready Color",
+"noctra.attack_cooldown_indicator.color_charging": "Charging Color",
+"noctra.attack_cooldown_indicator.show_border": "Show Border",
+"noctra.attack_cooldown_indicator.only_in_combat": "Only in Combat"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/attack_cooldown_indicator.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/attack_cooldown_indicator.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Ein horizontaler Balken in der unteren Bildhälfte, der von Orange (links, leer) nach Grün (rechts, voll) übergeht. Darüber ein stilisiertes Schwert-Symbol. Dunkler Hintergrund.

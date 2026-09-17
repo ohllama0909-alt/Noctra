@@ -4,7 +4,7 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/stack_counter/StackCounterModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.stack_counter`
+**Package:** `de.snenjih.noctra.modules.impl.stack_counter`
 
 ## Description
 
@@ -129,26 +129,26 @@ onRenderHud(ctx, tickDelta):
 ## Translation Keys
 
 ```json
-"mandatory.stack_counter.name": "Stack Counter",
-"mandatory.stack_counter.description": "Shows the total count of your held item type across all inventory slots.",
-"mandatory.stack_counter.bg_color": "Background Color",
-"mandatory.stack_counter.border_color": "Border Color",
-"mandatory.stack_counter.text_color": "Text Color",
-"mandatory.stack_counter.text_shadow": "Text Shadow",
-"mandatory.stack_counter.text_scale": "Text Scale",
-"mandatory.stack_counter.show_background": "Show Background",
-"mandatory.stack_counter.include_offhand": "Include Offhand",
-"mandatory.stack_counter.show_item_name": "Show Item Name",
-"mandatory.stack_counter.show_stacks": "Show Stack Count",
-"mandatory.stack_counter.hide_when_full_stack": "Hide If Single Stack",
-"mandatory.stack_counter.hide_on_empty": "Hide When Empty",
-"mandatory.stack_counter.warn_threshold": "Warn Below",
-"mandatory.stack_counter.color_warn": "Warn Color",
-"mandatory.stack_counter.count_nbt_stacks": "Count by Item Type"
+"noctra.stack_counter.name": "Stack Counter",
+"noctra.stack_counter.description": "Shows the total count of your held item type across all inventory slots.",
+"noctra.stack_counter.bg_color": "Background Color",
+"noctra.stack_counter.border_color": "Border Color",
+"noctra.stack_counter.text_color": "Text Color",
+"noctra.stack_counter.text_shadow": "Text Shadow",
+"noctra.stack_counter.text_scale": "Text Scale",
+"noctra.stack_counter.show_background": "Show Background",
+"noctra.stack_counter.include_offhand": "Include Offhand",
+"noctra.stack_counter.show_item_name": "Show Item Name",
+"noctra.stack_counter.show_stacks": "Show Stack Count",
+"noctra.stack_counter.hide_when_full_stack": "Hide If Single Stack",
+"noctra.stack_counter.hide_on_empty": "Hide When Empty",
+"noctra.stack_counter.warn_threshold": "Warn Below",
+"noctra.stack_counter.color_warn": "Warn Color",
+"noctra.stack_counter.count_nbt_stacks": "Count by Item Type"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/stack_counter.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/stack_counter.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Drei übereinander gestapelte Inventar-Slots mit einer Summenzahl unten rechts. Einfache Pixel-Art.

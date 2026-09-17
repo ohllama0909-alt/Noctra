@@ -13,9 +13,9 @@ Zeigt das aktuell gehaltene Item als großes HUD-Element mit Name, Durability-Ba
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/item_info_hud/ItemInfoHudModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.item_info_hud`
+- Package: `de.snenjih.noctra.modules.impl.item_info_hud`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 - Neue Setting-Typen: `ColorSetting` für Textfarbe, `BooleanSetting` für Anzeigeoptionen
 
 ## Settings
@@ -52,8 +52,8 @@ Zeigt das aktuell gehaltene Item als großes HUD-Element mit Name, Durability-Ba
 ## Translation Keys
 
 ```json
-"mandatory.module.item_info_hud.name": "Item Info HUD",
-"mandatory.module.item_info_hud.description": "Shows held item name, durability, and enchantments as a HUD overlay."
+"noctra.module.item_info_hud.name": "Item Info HUD",
+"noctra.module.item_info_hud.description": "Shows held item name, durability, and enchantments as a HUD overlay."
 ```
 
 ## Icon

@@ -1,4 +1,4 @@
-# MandatoryMod — Task Board
+# NoctraMod — Task Board
 
 > **Workflow:** Read the spec file linked on each line, implement the module, then mark `[ ]` → `[x]` here AND in the spec file.
 > Keep this file current at all times — it is the single source of truth for what's done and what's next.

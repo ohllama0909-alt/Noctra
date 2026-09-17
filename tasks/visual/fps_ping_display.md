@@ -4,14 +4,14 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/fps_ping_display/FpsPingDisplayModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.fps_ping_display`
+**Package:** `de.snenjih.noctra.modules.impl.fps_ping_display`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/fps_ping_display/FpsPingDisplayModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.fps_ping_display`
+- Package: `de.snenjih.noctra.modules.impl.fps_ping_display`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 
 ## Description
 
@@ -113,26 +113,26 @@ Hilfsmethode getPing(MinecraftClient mc):
 ## Translation Keys
 
 ```json
-"mandatory.fps_ping_display.name": "FPS & Ping",
-"mandatory.fps_ping_display.description": "Shows current FPS and server ping on screen.",
-"mandatory.fps_ping_display.x_pos": "X Position",
-"mandatory.fps_ping_display.y_pos": "Y Position",
-"mandatory.fps_ping_display.show_fps": "Show FPS",
-"mandatory.fps_ping_display.show_ping": "Show Ping",
-"mandatory.fps_ping_display.text_color": "Text Color",
-"mandatory.fps_ping_display.color_fps_good": "FPS Color Good",
-"mandatory.fps_ping_display.color_fps_bad": "FPS Color Bad",
-"mandatory.fps_ping_display.fps_good_threshold": "FPS Good (≥)",
-"mandatory.fps_ping_display.fps_bad_threshold": "FPS Bad (<)",
-"mandatory.fps_ping_display.color_ping_good": "Ping Color Good",
-"mandatory.fps_ping_display.color_ping_bad": "Ping Color Bad",
-"mandatory.fps_ping_display.ping_good_threshold": "Ping Good (≤ ms)",
-"mandatory.fps_ping_display.ping_bad_threshold": "Ping Bad (> ms)",
-"mandatory.fps_ping_display.background": "Background"
+"noctra.fps_ping_display.name": "FPS & Ping",
+"noctra.fps_ping_display.description": "Shows current FPS and server ping on screen.",
+"noctra.fps_ping_display.x_pos": "X Position",
+"noctra.fps_ping_display.y_pos": "Y Position",
+"noctra.fps_ping_display.show_fps": "Show FPS",
+"noctra.fps_ping_display.show_ping": "Show Ping",
+"noctra.fps_ping_display.text_color": "Text Color",
+"noctra.fps_ping_display.color_fps_good": "FPS Color Good",
+"noctra.fps_ping_display.color_fps_bad": "FPS Color Bad",
+"noctra.fps_ping_display.fps_good_threshold": "FPS Good (≥)",
+"noctra.fps_ping_display.fps_bad_threshold": "FPS Bad (<)",
+"noctra.fps_ping_display.color_ping_good": "Ping Color Good",
+"noctra.fps_ping_display.color_ping_bad": "Ping Color Bad",
+"noctra.fps_ping_display.ping_good_threshold": "Ping Good (≤ ms)",
+"noctra.fps_ping_display.ping_bad_threshold": "Ping Bad (> ms)",
+"noctra.fps_ping_display.background": "Background"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/fps_ping_display.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/fps_ping_display.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Kleines Diagramm oder Speedometer-Symbol mit "60" als Zahl; daneben ein WLAN-Balken-Symbol. Grüne Signalfarbe.

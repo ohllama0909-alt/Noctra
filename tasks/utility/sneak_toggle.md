@@ -4,12 +4,12 @@
 **Category:** UTILITY  
 **Status:** [x] DONE  
 **Class:** `modules/impl/sneak_toggle/SneakToggleModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.sneak_toggle`
+**Package:** `de.snenjih.noctra.modules.impl.sneak_toggle`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/sneak_toggle/SneakToggleModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.sneak_toggle`
+- Package: `de.snenjih.noctra.modules.impl.sneak_toggle`
 - Implementiert HudElement: Nein
 - Benötigt Mixin: `SneakToggleMixin` auf `KeyboardInput` oder `ClientPlayerEntity`
 - Analog zu SprintToggleModule (`modules/impl/sprint_toggle/SprintToggleModule.java`)
@@ -74,7 +74,7 @@ onClientTick(MinecraftClient client):
     sneakKeyWasPressed = sneakKeyNowPressed
 
 // Im SneakToggleMixin (KeyboardInput.tick TAIL):
-SneakToggleModule module = MandatoryMod.getRegistry().getModule("sneak_toggle");
+SneakToggleModule module = NoctraMod.getRegistry().getModule("sneak_toggle");
 if (module != null && module.isEnabled() && module.isSneakActive()):
     this.sneaking = true
     // Falls PlayerInput-Record (1.21.11): Mixin muss @Mutable verwenden oder
@@ -100,14 +100,14 @@ if (module != null && module.isEnabled() && module.isSneakActive()):
 ## Translation Keys
 
 ```json
-"mandatory.sneak_toggle.name": "Sneak Toggle",
-"mandatory.sneak_toggle.description": "Toggle sneaking permanently without holding the Shift key.",
-"mandatory.sneak_toggle.disable_on_sneak_press": "Disable on Sneak Press",
-"mandatory.sneak_toggle.disable_on_sprint": "Disable on Sprint"
+"noctra.sneak_toggle.name": "Sneak Toggle",
+"noctra.sneak_toggle.description": "Toggle sneaking permanently without holding the Shift key.",
+"noctra.sneak_toggle.disable_on_sneak_press": "Disable on Sneak Press",
+"noctra.sneak_toggle.disable_on_sprint": "Disable on Sprint"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/sneak_toggle.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/sneak_toggle.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Schleichender Charakter (gebückte Silhouette) oder ein Pfeil nach unten mit einem Schloss-Symbol. Farbe: Grau/Blaugrau auf dunklem Hintergrund.

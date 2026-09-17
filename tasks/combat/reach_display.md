@@ -4,14 +4,14 @@
 **Category:** COMBAT  
 **Status:** [x] DONE  
 **Class:** `modules/impl/reach_display/ReachDisplayModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.reach_display`
+**Package:** `de.snenjih.noctra.modules.impl.reach_display`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/reach_display/ReachDisplayModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.reach_display`
+- Package: `de.snenjih.noctra.modules.impl.reach_display`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 
 ## Description
 
@@ -146,19 +146,19 @@ private double getBlockReach(MinecraftClient mc, ClientPlayerEntity player) {
 ## Translation Keys
 
 ```json
-"mandatory.reach_display.name": "Reach Display",
-"mandatory.reach_display.description": "Shows your current attack and interaction reach on the HUD.",
-"mandatory.reach_display.x_pos": "X Position",
-"mandatory.reach_display.y_pos": "Y Position",
-"mandatory.reach_display.show_attack": "Show Attack Reach",
-"mandatory.reach_display.show_interact": "Show Interact Reach",
-"mandatory.reach_display.decimal_places": "Decimal Places",
-"mandatory.reach_display.background": "Background",
-"mandatory.reach_display.text_color": "Text Color"
+"noctra.reach_display.name": "Reach Display",
+"noctra.reach_display.description": "Shows your current attack and interaction reach on the HUD.",
+"noctra.reach_display.x_pos": "X Position",
+"noctra.reach_display.y_pos": "Y Position",
+"noctra.reach_display.show_attack": "Show Attack Reach",
+"noctra.reach_display.show_interact": "Show Interact Reach",
+"noctra.reach_display.decimal_places": "Decimal Places",
+"noctra.reach_display.background": "Background",
+"noctra.reach_display.text_color": "Text Color"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/reach_display.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/reach_display.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Ein Messliniensymbol — eine horizontale Linie mit zwei vertikalen Endmarkierungen (wie ein Lineal), mittig eine Zahl oder Pfeilspitze. Alternativ: ein Fadenkreuz mit Radius-Kreisen in verschiedenen Abständen, die unterschiedliche Reichweiten darstellen.

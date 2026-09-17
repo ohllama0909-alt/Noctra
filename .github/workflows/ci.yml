@@ -31,6 +31,6 @@ jobs:
         uses: actions/upload-artifact@v4
         if: success()
         with:
-          name: mandatory-${{ github.sha }}
+          name: noctra-${{ github.sha }}
           path: build/libs/*.jar
           retention-days: 7

@@ -4,12 +4,12 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/item_age_timer/ItemAgeTimerModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.item_age_timer`
+**Package:** `de.snenjih.noctra.modules.impl.item_age_timer`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/item_age_timer/ItemAgeTimerModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.item_age_timer`
+- Package: `de.snenjih.noctra.modules.impl.item_age_timer`
 - Implementiert HudElement: Nein (Mixin auf Item-Entity-Rendering)
 - Benötigt Mixin auf `ItemEntityRenderer` oder `onRenderWorld`
 
@@ -132,16 +132,16 @@ onRenderWorld(WorldRenderContext ctx):
 ## Translation Keys
 
 ```json
-"mandatory.item_age_timer.name": "Item Age Timer",
-"mandatory.item_age_timer.description": "Shows remaining despawn time above dropped items in the world.",
-"mandatory.item_age_timer.render_radius": "Render Radius",
-"mandatory.item_age_timer.show_only_low_time": "Only Show Expiring",
-"mandatory.item_age_timer.low_time_threshold": "Expiry Threshold (s)",
-"mandatory.item_age_timer.text_scale": "Text Scale"
+"noctra.item_age_timer.name": "Item Age Timer",
+"noctra.item_age_timer.description": "Shows remaining despawn time above dropped items in the world.",
+"noctra.item_age_timer.render_radius": "Render Radius",
+"noctra.item_age_timer.show_only_low_time": "Only Show Expiring",
+"noctra.item_age_timer.low_time_threshold": "Expiry Threshold (s)",
+"noctra.item_age_timer.text_scale": "Text Scale"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/item_age_timer.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/item_age_timer.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Item-Drop-Silhouette (kleines Quadrat/Würfel) mit einer Uhr oder Sanduhr darunter. Farbe: Orange/Gelb mit rotem Akzent auf dunklem Hintergrund.

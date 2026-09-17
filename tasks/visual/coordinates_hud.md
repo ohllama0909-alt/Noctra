@@ -4,14 +4,14 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/coordinates_hud/CoordinatesHudModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.coordinates_hud`
+**Package:** `de.snenjih.noctra.modules.impl.coordinates_hud`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/coordinates_hud/CoordinatesHudModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.coordinates_hud`
+- Package: `de.snenjih.noctra.modules.impl.coordinates_hud`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 - Neue Setting-Typen verfügbar: `KeybindSetting`, `ColorSetting`, `TextSetting`
 - Direction HUD ist als `showDirection` Setting integriert (kein separates Modul)
 
@@ -81,19 +81,19 @@ Kein Mixin erforderlich.
 ## Translation Keys
 
 ```json
-"mandatory.coordinates_hud.name": "Coordinates HUD",
-"mandatory.coordinates_hud.description": "Displays your X/Y/Z coordinates on screen.",
-"mandatory.coordinates_hud.x_pos": "X Position",
-"mandatory.coordinates_hud.y_pos": "Y Position",
-"mandatory.coordinates_hud.text_color": "Text Color",
-"mandatory.coordinates_hud.show_direction": "Show Direction",
-"mandatory.coordinates_hud.show_chunk": "Show Chunk",
-"mandatory.coordinates_hud.decimal_places": "Decimal Places",
-"mandatory.coordinates_hud.background": "Background"
+"noctra.coordinates_hud.name": "Coordinates HUD",
+"noctra.coordinates_hud.description": "Displays your X/Y/Z coordinates on screen.",
+"noctra.coordinates_hud.x_pos": "X Position",
+"noctra.coordinates_hud.y_pos": "Y Position",
+"noctra.coordinates_hud.text_color": "Text Color",
+"noctra.coordinates_hud.show_direction": "Show Direction",
+"noctra.coordinates_hud.show_chunk": "Show Chunk",
+"noctra.coordinates_hud.decimal_places": "Decimal Places",
+"noctra.coordinates_hud.background": "Background"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/coordinates_hud.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/coordinates_hud.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Kompass-Rose oder drei Achsen (X/Y/Z) als farbige Pfeile (rot/grün/blau) in isometrischer Ansicht, vor dunkel-transparentem Hintergrund.

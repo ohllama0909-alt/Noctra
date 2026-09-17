@@ -13,7 +13,7 @@ Ermöglicht das Anpassen von Position, Größe und Sichtbarkeit der Vanilla-Boss
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/boss_bar_customizer/BossBarCustomizerModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.boss_bar_customizer`
+- Package: `de.snenjih.noctra.modules.impl.boss_bar_customizer`
 - Implementiert HudElement: Nein (Mixin auf `BossBarHud` / `InGameHud`)
 - Benötigt Mixin auf `BossBarHud.render()` um Position und Sichtbarkeit zu überschreiben
 - Alternativ: Mixin auf `ClientBossBar` um die Render-Koordinaten zu verändern
@@ -47,8 +47,8 @@ Ermöglicht das Anpassen von Position, Größe und Sichtbarkeit der Vanilla-Boss
 ## Translation Keys
 
 ```json
-"mandatory.module.boss_bar_customizer.name": "Boss Bar Customizer",
-"mandatory.module.boss_bar_customizer.description": "Move, scale, or hide the vanilla boss health bar."
+"noctra.module.boss_bar_customizer.name": "Boss Bar Customizer",
+"noctra.module.boss_bar_customizer.description": "Move, scale, or hide the vanilla boss health bar."
 ```
 
 ## Icon

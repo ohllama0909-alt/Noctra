@@ -72,7 +72,7 @@ shortDim(String dim):
     // alles andere: letztes Segment nach ":"
 
 sendChatMessage(MinecraftClient client, BlockPos pos, String dimension):
-    Text msg = Text.literal("[MandatoryMod] Died at " + formatPos(pos) + " in " + shortDim(dimension))
+    Text msg = Text.literal("[NoctraMod] Died at " + formatPos(pos) + " in " + shortDim(dimension))
         .styled(s -> s.withColor(0xFF5555))
     client.inGameHud.getChatHud().addMessage(msg)
 ```
@@ -91,16 +91,16 @@ sendChatMessage(MinecraftClient client, BlockPos pos, String dimension):
 ## Translation Keys
 
 ```json
-"mandatory.death_coordinates.name": "Death Coordinates",
-"mandatory.death_coordinates.description": "Saves your last death positions and shows them on the HUD.",
-"mandatory.death_coordinates.max_entries": "Max Entries",
-"mandatory.death_coordinates.show_hud": "Show HUD",
-"mandatory.death_coordinates.hud_x": "HUD X",
-"mandatory.death_coordinates.hud_y": "HUD Y"
+"noctra.death_coordinates.name": "Death Coordinates",
+"noctra.death_coordinates.description": "Saves your last death positions and shows them on the HUD.",
+"noctra.death_coordinates.max_entries": "Max Entries",
+"noctra.death_coordinates.show_hud": "Show HUD",
+"noctra.death_coordinates.hud_x": "HUD X",
+"noctra.death_coordinates.hud_y": "HUD Y"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/death_coordinates.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/death_coordinates.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Roter Totenkopf oder ein Grabstein mit einem kleinen Koordinaten-Pin. Farbe: Rot/Dunkelrot auf dunklem Hintergrund.

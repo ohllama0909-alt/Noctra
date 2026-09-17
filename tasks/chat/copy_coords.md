@@ -4,12 +4,12 @@
 **Category:** CHAT
 **Status:** [x] DONE
 **Class:** `modules/impl/copy_coords/CopyCoordsModule.java`
-**Package:** `de.snenjih.mandatory.modules.impl.copy_coords`
+**Package:** `de.snenjih.noctra.modules.impl.copy_coords`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/copy_coords/CopyCoordsModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.copy_coords`
+- Package: `de.snenjih.noctra.modules.impl.copy_coords`
 - Implementiert HudElement: Nein
 - `KeybindSetting` für Copy-Keybind verwenden
 
@@ -49,7 +49,7 @@ Store as `EnumSetting<CoordsFormat>("format", "Format", CoordsFormat.FULL, Coord
 
 ## Implementation
 
-### Wire-up in MandatoryMod
+### Wire-up in NoctraMod
 
 No new event listeners are required beyond what already exists. The feature works entirely
 through `ChatCommandDispatcher`. Add a `"coords"` case:
@@ -150,10 +150,10 @@ module must still be registered in `ModuleRegistry` so that:
 When the module is disabled, `.coords` does nothing (shows an INFO notification: "Enable
 Copy Coords first.").
 
-### Registering in MandatoryMod
+### Registering in NoctraMod
 
 ```java
-// In MandatoryMod.onInitializeClient():
+// In NoctraMod.onInitializeClient():
 registry.register(new CopyCoordsModule());
 ```
 
@@ -203,18 +203,18 @@ private static void handleCoords() {
 ## Translation Keys
 
 ```json
-"mandatory.module.copy_coords.name": "Copy Coords",
-"mandatory.module.copy_coords.description": "Copy your position to the clipboard with .coords.",
-"mandatory.copy_coords.setting.post_to_chat": "Post to Chat",
-"mandatory.copy_coords.setting.show_nether": "Show Nether Coords",
-"mandatory.copy_coords.setting.format": "Format"
+"noctra.module.copy_coords.name": "Copy Coords",
+"noctra.module.copy_coords.description": "Copy your position to the clipboard with .coords.",
+"noctra.copy_coords.setting.post_to_chat": "Post to Chat",
+"noctra.copy_coords.setting.show_nether": "Show Nether Coords",
+"noctra.copy_coords.setting.format": "Format"
 ```
 
 ---
 
 ## Icon
 
-**Path:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/copy_coords.png`
+**Path:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/copy_coords.png`
 **Size:** 32x32 PNG
 **Suggestion:** A crosshair or map pin over a simplified coordinate grid (X/Z axes), with a
 small clipboard icon in the corner. Colour: light green or cyan to suggest "location captured".

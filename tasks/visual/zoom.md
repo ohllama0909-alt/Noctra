@@ -4,12 +4,12 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/zoom/ZoomModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.zoom`
+**Package:** `de.snenjih.noctra.modules.impl.zoom`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/zoom/ZoomModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.zoom`
+- Package: `de.snenjih.noctra.modules.impl.zoom`
 - Implementiert HudElement: Nein (kein HUD-Overlay; FOV-Override via Mixin)
 - Benötigt 2 Mixins: `ZoomFovMixin` (GameRenderer) und `ZoomScrollMixin` (Mouse)
 - `KeybindSetting` für Zoom-Taste verwenden
@@ -142,23 +142,23 @@ Scroll-Zoom in ZoomScrollMixin.onScroll():
 - Scroll-Zoom: Wird von `ZoomScrollMixin` abgefangen, `ci.cancel()` verhindert Slot-Wechsel.
 - `KeyBindingHelper` Import: `net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper`.
 - `InputUtil` und `GLFW`: `net.minecraft.client.util.InputUtil`, `org.lwjgl.glfw.GLFW`.
-- Mixin-Registrierung: Beide Mixins in `mandatory.mixins.json` unter `"client"` eintragen.
+- Mixin-Registrierung: Beide Mixins in `noctra.mixins.json` unter `"client"` eintragen.
 
 ## Translation Keys
 
 ```json
-"mandatory.zoom.name": "Zoom",
-"mandatory.zoom.description": "Optifine-like zoom activated by holding a key.",
-"mandatory.zoom.zoom_fov": "Zoom FOV",
-"mandatory.zoom.smooth_zoom": "Smooth Zoom",
-"mandatory.zoom.smooth_speed": "Smooth Speed",
-"mandatory.zoom.scroll_sensitivity": "Scroll Sensitivity",
-"mandatory.zoom.cinematic_cam": "Cinematic Camera",
+"noctra.zoom.name": "Zoom",
+"noctra.zoom.description": "Optifine-like zoom activated by holding a key.",
+"noctra.zoom.zoom_fov": "Zoom FOV",
+"noctra.zoom.smooth_zoom": "Smooth Zoom",
+"noctra.zoom.smooth_speed": "Smooth Speed",
+"noctra.zoom.scroll_sensitivity": "Scroll Sensitivity",
+"noctra.zoom.cinematic_cam": "Cinematic Camera",
 "key.mandatory.zoom": "Zoom"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/zoom.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/zoom.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Lupe mit einem "+" oder Fernrohr-Silhouette in Pixel-Art. Blaue/weiße Farben, klares Symbol.

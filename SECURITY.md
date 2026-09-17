@@ -11,20 +11,20 @@ Only the latest release is actively maintained and receives security fixes.
 
 ## Scope
 
-MandatoryMod is a **client-side only** Fabric mod. It does not run any server-side code and does not expose network endpoints. The attack surface is limited to:
+Noctra is a **client-side only** Fabric mod. It does not run any server-side code and does not expose network endpoints. The attack surface is limited to:
 
-- Reading and writing the local config file (`mandatory.json`)
+- Reading and writing the local config file (`noctra.json`)
 - In-game client interactions (inventory manipulation, chat interception)
 
 Issues outside this scope (e.g. vulnerabilities in Minecraft itself, Fabric Loader, or Fabric API) should be reported to the respective upstream projects.
 
 ## Reporting a Vulnerability
 
-If you discover a security issue in MandatoryMod, please **do not open a public GitHub issue**.
+If you discover a security issue in Noctra, please **do not open a public GitHub issue**.
 
 Report privately via one of these channels:
 
-- **GitHub Private Vulnerability Reporting:** [Report a vulnerability](https://github.com/Snenjih/Mandatory/security/advisories/new)
+- **GitHub Private Vulnerability Reporting:** [Report a vulnerability](https://github.com/ohllama0909-alt/Noctra/security/advisories/new)
 - **Email:** niklasoliver77@icloud.com
 
 Please include:

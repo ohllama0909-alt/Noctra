@@ -4,14 +4,14 @@
 **Category:** COMBAT  
 **Status:** [x] DONE  
 **Class:** `modules/impl/arrow_counter/ArrowCounterModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.arrow_counter`
+**Package:** `de.snenjih.noctra.modules.impl.arrow_counter`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/arrow_counter/ArrowCounterModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.arrow_counter`
+- Package: `de.snenjih.noctra.modules.impl.arrow_counter`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 
 ## Description
 
@@ -125,17 +125,17 @@ onRenderHud(DrawContext ctx, RenderTickCounter counter):
 ## Translation Keys
 
 ```json
-"mandatory.arrow_counter.name": "Arrow Counter",
-"mandatory.arrow_counter.description": "Shows arrow count on the HUD when holding a bow or crossbow.",
-"mandatory.arrow_counter.hud_x": "HUD X",
-"mandatory.arrow_counter.hud_y": "HUD Y",
-"mandatory.arrow_counter.show_spectral": "Count Spectral Arrows",
-"mandatory.arrow_counter.show_tipped": "Count Tipped Arrows",
-"mandatory.arrow_counter.always_show": "Always Show"
+"noctra.arrow_counter.name": "Arrow Counter",
+"noctra.arrow_counter.description": "Shows arrow count on the HUD when holding a bow or crossbow.",
+"noctra.arrow_counter.hud_x": "HUD X",
+"noctra.arrow_counter.hud_y": "HUD Y",
+"noctra.arrow_counter.show_spectral": "Count Spectral Arrows",
+"noctra.arrow_counter.show_tipped": "Count Tipped Arrows",
+"noctra.arrow_counter.always_show": "Always Show"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/arrow_counter.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/arrow_counter.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Stilisierter Pfeil (diagonal nach oben rechts) mit einer Zahl darunter. Farbe: Grau/Weiß Pfeil auf dunklem Hintergrund, gelbe Zahl.

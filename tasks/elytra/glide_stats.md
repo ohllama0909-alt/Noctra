@@ -4,14 +4,14 @@
 **Category:** ELYTRA  
 **Status:** [x] DONE  
 **Class:** `modules/impl/glide_stats/GlideStatsModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.glide_stats`
+**Package:** `de.snenjih.noctra.modules.impl.glide_stats`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/glide_stats/GlideStatsModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.glide_stats`
+- Package: `de.snenjih.noctra.modules.impl.glide_stats`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 
 ## Description
 
@@ -126,17 +126,17 @@ Breite der Box: ~90 Skalenpixel. Schriftgröße ist immer Vanilla-Standard (Mine
 ## Translation Keys
 
 ```json
-"mandatory.glide_stats.name": "Glide Stats",
-"mandatory.glide_stats.description": "Shows real-time speed, altitude, and pitch while gliding.",
-"mandatory.glide_stats.always_show": "Always Show",
-"mandatory.glide_stats.hud_x": "HUD X",
-"mandatory.glide_stats.hud_y": "HUD Y",
-"mandatory.glide_stats.show_background": "Show Background"
+"noctra.glide_stats.name": "Glide Stats",
+"noctra.glide_stats.description": "Shows real-time speed, altitude, and pitch while gliding.",
+"noctra.glide_stats.always_show": "Always Show",
+"noctra.glide_stats.hud_x": "HUD X",
+"noctra.glide_stats.hud_y": "HUD Y",
+"noctra.glide_stats.show_background": "Show Background"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/glide_stats.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/glide_stats.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Kleines Tachometer- oder Diagramm-Symbol (Balkendiagramm mit aufsteigenden Balken),
 alternativ ein Elytra-Silhouette mit einem kleinen Blitz daneben. Stil: Pixel-Art, weiße Linien

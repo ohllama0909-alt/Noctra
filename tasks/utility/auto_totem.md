@@ -41,7 +41,7 @@ onClientTick(client):
   totemSlot = findTotem(player, preferHotbar.get())
   if totemSlot == -1:
     if showWarning.get() && offhand.isEmpty():
-      player.sendMessage(Text.translatable("mandatory.auto_totem.no_totem"), true)
+      player.sendMessage(Text.translatable("noctra.auto_totem.no_totem"), true)
     return
 
   // Perform the swap: move totem from inventory to offhand (slot 45)
@@ -98,15 +98,15 @@ private static boolean isTotem(ItemStack stack)
 ## Translation Keys
 
 ```json
-"mandatory.auto_totem.name": "Auto Totem",
-"mandatory.auto_totem.description": "Keeps a Totem of Undying in your offhand automatically.",
-"mandatory.auto_totem.prefer_hotbar": "Prefer Hotbar",
-"mandatory.auto_totem.show_warning": "Show Warning",
-"mandatory.auto_totem.no_totem": "Auto Totem: No totem in inventory!"
+"noctra.auto_totem.name": "Auto Totem",
+"noctra.auto_totem.description": "Keeps a Totem of Undying in your offhand automatically.",
+"noctra.auto_totem.prefer_hotbar": "Prefer Hotbar",
+"noctra.auto_totem.show_warning": "Show Warning",
+"noctra.auto_totem.no_totem": "Auto Totem: No totem in inventory!"
 ```
 
 ## Icon
 
-**Path:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/auto_totem.png`  
+**Path:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/auto_totem.png`  
 **Size:** 32×32 PNG  
 **Suggestion:** A golden totem-of-undying face (the vanilla item texture, simplified) centered on a dark background with a small shield or heart overlay in the bottom-right corner to indicate "protection."

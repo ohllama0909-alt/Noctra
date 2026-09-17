@@ -4,14 +4,14 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/durability_hud/DurabilityHudModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.durability_hud`
+**Package:** `de.snenjih.noctra.modules.impl.durability_hud`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/durability_hud/DurabilityHudModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.durability_hud`
+- Package: `de.snenjih.noctra.modules.impl.durability_hud`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 - Neue Setting-Typen verfügbar: `ColorSetting` statt `IntSetting` für Farbwerte
 
 ## Description
@@ -109,25 +109,25 @@ onRenderHud(DrawContext ctx, float tickDelta):
 ## Translation Keys
 
 ```json
-"mandatory.durability_hud.name": "Durability HUD",
-"mandatory.durability_hud.description": "Shows the held item's durability as a large bar and number.",
-"mandatory.durability_hud.x_pos": "X Position",
-"mandatory.durability_hud.y_pos": "Y Position",
-"mandatory.durability_hud.show_bar": "Show Bar",
-"mandatory.durability_hud.show_numbers": "Show Numbers",
-"mandatory.durability_hud.show_percent": "Show Percent",
-"mandatory.durability_hud.bar_width": "Bar Width",
-"mandatory.durability_hud.color_full": "Color Full",
-"mandatory.durability_hud.color_warn": "Color Warn",
-"mandatory.durability_hud.color_crit": "Color Critical",
-"mandatory.durability_hud.warn_threshold": "Warn Threshold",
-"mandatory.durability_hud.crit_threshold": "Crit Threshold",
-"mandatory.durability_hud.hide_when_full": "Hide When Full",
-"mandatory.durability_hud.background": "Background"
+"noctra.durability_hud.name": "Durability HUD",
+"noctra.durability_hud.description": "Shows the held item's durability as a large bar and number.",
+"noctra.durability_hud.x_pos": "X Position",
+"noctra.durability_hud.y_pos": "Y Position",
+"noctra.durability_hud.show_bar": "Show Bar",
+"noctra.durability_hud.show_numbers": "Show Numbers",
+"noctra.durability_hud.show_percent": "Show Percent",
+"noctra.durability_hud.bar_width": "Bar Width",
+"noctra.durability_hud.color_full": "Color Full",
+"noctra.durability_hud.color_warn": "Color Warn",
+"noctra.durability_hud.color_crit": "Color Critical",
+"noctra.durability_hud.warn_threshold": "Warn Threshold",
+"noctra.durability_hud.crit_threshold": "Crit Threshold",
+"noctra.durability_hud.hide_when_full": "Hide When Full",
+"noctra.durability_hud.background": "Background"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/durability_hud.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/durability_hud.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Pixeliges Schwert oder Werkzeug mit einem horizontalen Balken darunter, der von links nach rechts von grün nach rot verläuft. Unteres Drittel des Balkens rot gefärbt als Warnhinweis.

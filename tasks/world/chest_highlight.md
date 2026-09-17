@@ -4,12 +4,12 @@
 **Category:** WORLD  
 **Status:** [x] DONE  
 **Class:** `modules/impl/chest_highlight/ChestHighlightModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.chest_highlight`
+**Package:** `de.snenjih.noctra.modules.impl.chest_highlight`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/chest_highlight/ChestHighlightModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.chest_highlight`
+- Package: `de.snenjih.noctra.modules.impl.chest_highlight`
 - Implementiert HudElement: Nein (Welt-Rendering via `onRenderWorld`)
 - Verwendet `WorldRenderContext` aus `net.fabricmc.fabric.api.client.rendering.v1.world`
 
@@ -151,19 +151,19 @@ if xray.get():
 ## Translation Keys
 
 ```json
-"mandatory.chest_highlight.name": "Chest Highlight",
-"mandatory.chest_highlight.description": "Outlines nearby chests, barrels, and shulker boxes.",
-"mandatory.chest_highlight.radius": "Search Radius",
-"mandatory.chest_highlight.scan_interval": "Scan Interval",
-"mandatory.chest_highlight.xray": "Show Through Walls",
-"mandatory.chest_highlight.color_chest": "Chest Color",
-"mandatory.chest_highlight.color_barrel": "Barrel Color",
-"mandatory.chest_highlight.color_shulker": "Shulker Box Color",
-"mandatory.chest_highlight.line_width": "Line Width"
+"noctra.chest_highlight.name": "Chest Highlight",
+"noctra.chest_highlight.description": "Outlines nearby chests, barrels, and shulker boxes.",
+"noctra.chest_highlight.radius": "Search Radius",
+"noctra.chest_highlight.scan_interval": "Scan Interval",
+"noctra.chest_highlight.xray": "Show Through Walls",
+"noctra.chest_highlight.color_chest": "Chest Color",
+"noctra.chest_highlight.color_barrel": "Barrel Color",
+"noctra.chest_highlight.color_shulker": "Shulker Box Color",
+"noctra.chest_highlight.line_width": "Line Width"
 ```
 
 ## Icon
 
-**Path:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/chest_highlight.png`  
+**Path:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/chest_highlight.png`  
 **Size:** 32×32 PNG  
 **Suggestion:** Ein vereinfachtes Kisten-Icon (Trapez-Silhouette mit Schloss-Streifen) umgeben von einem leuchtenden farbigen Rahmen/Glow — die Outline-Box symbolisiert das Highlight-Konzept. Farbe des Rahmens in Orange (Kisten-Farbe).

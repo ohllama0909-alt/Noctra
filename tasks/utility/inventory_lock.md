@@ -94,13 +94,13 @@ toggleSlot(int slotId):
 ## Translation Keys
 
 ```json
-"mandatory.inventory_lock.name": "Inventory Lock",
-"mandatory.inventory_lock.description": "Locks inventory slots to prevent accidental item movement or dropping.",
-"mandatory.inventory_lock.show_lock_icon": "Show Lock Icon"
+"noctra.inventory_lock.name": "Inventory Lock",
+"noctra.inventory_lock.description": "Locks inventory slots to prevent accidental item movement or dropping.",
+"noctra.inventory_lock.show_lock_icon": "Show Lock Icon"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/inventory_lock.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/inventory_lock.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Geschlossenes Vorhängeschloss, zentriert. Farbe: Gelb/Gold auf dunklem Hintergrund.

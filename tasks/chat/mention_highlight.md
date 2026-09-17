@@ -4,12 +4,12 @@
 **Category:** CHAT
 **Status:** [x] DONE
 **Class:** `modules/impl/mention_highlight/MentionHighlightModule.java`
-**Package:** `de.snenjih.mandatory.modules.impl.mention_highlight`
+**Package:** `de.snenjih.noctra.modules.impl.mention_highlight`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/mention_highlight/MentionHighlightModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.mention_highlight`
+- Package: `de.snenjih.noctra.modules.impl.mention_highlight`
 - Implementiert HudElement: Nein (Chat-basiert)
 - `ColorSetting` für `color`-Setting verwenden statt `IntSetting`
 
@@ -40,13 +40,13 @@ clamping desired; the carousel UI will expose a colour-picker widget in a future
 
 ## Implementation
 
-### Wire-up in MandatoryMod
+### Wire-up in NoctraMod
 
 `onReceiveChat` is already declared on `Module` and will be called from the receive-message
-event listener that must be added to `MandatoryMod.registerEvents()`:
+event listener that must be added to `NoctraMod.registerEvents()`:
 
 ```java
-// In MandatoryMod.registerEvents(), add alongside the existing ALLOW_CHAT listener:
+// In NoctraMod.registerEvents(), add alongside the existing ALLOW_CHAT listener:
 
 // Player chat messages (chat bubbles)
 ClientReceiveMessageEvents.ALLOW_CHAT.register((message, signedMessage, sender, params, receptionTimestamp) -> {
@@ -123,7 +123,7 @@ Use ALLOW_CHAT returning false + manual addMessage() call for chat messages.
 Use ALLOW_GAME returning false + manual addMessage() call for game messages.
 ```
 
-This means the receive-event wiring in `MandatoryMod` must be redesigned slightly for this
+This means the receive-event wiring in `NoctraMod` must be redesigned slightly for this
 module: the global `ALLOW_CHAT` / `ALLOW_GAME` handlers must check whether any enabled module
 wants to modify the text before deciding whether to return `true`.
 
@@ -150,7 +150,7 @@ public class ChatHudMixin {
 }
 ```
 
-Register `ChatHudMixin` in `mandatory.mixins.json` under `"client"`. `highlight(Text)` is a
+Register `ChatHudMixin` in `noctra.mixins.json` under `"client"`. `highlight(Text)` is a
 public method on `MentionHighlightModule` that executes steps 1-5 from the algorithm above and
 returns the (potentially) modified text without any side effects.
 
@@ -176,18 +176,18 @@ Sound playback still happens inside `highlight()` when a match is found.
 ## Translation Keys
 
 ```json
-"mandatory.module.mention_highlight.name": "Mention Highlight",
-"mandatory.module.mention_highlight.description": "Highlights your name in chat and plays a sound ping.",
-"mandatory.mention_highlight.setting.color": "Highlight Colour",
-"mandatory.mention_highlight.setting.play_sound": "Play Sound on Mention",
-"mandatory.mention_highlight.setting.partial_match": "Partial Match"
+"noctra.module.mention_highlight.name": "Mention Highlight",
+"noctra.module.mention_highlight.description": "Highlights your name in chat and plays a sound ping.",
+"noctra.mention_highlight.setting.color": "Highlight Colour",
+"noctra.mention_highlight.setting.play_sound": "Play Sound on Mention",
+"noctra.mention_highlight.setting.partial_match": "Partial Match"
 ```
 
 ---
 
 ## Icon
 
-**Path:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/mention_highlight.png`
+**Path:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/mention_highlight.png`
 **Size:** 32x32 PNG
 **Suggestion:** A speech bubble outline with a small star or exclamation mark inside, rendered
 in yellow to match the default highlight colour.

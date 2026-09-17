@@ -4,12 +4,12 @@
 **Category:** ELYTRA  
 **Status:** [x] DONE  
 **Class:** `modules/impl/firework_boost/FireworkBoostModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.firework_boost`
+**Package:** `de.snenjih.noctra.modules.impl.firework_boost`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/firework_boost/FireworkBoostModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.firework_boost`
+- Package: `de.snenjih.noctra.modules.impl.firework_boost`
 - Implementiert HudElement: Nein
 - `KeybindSetting` für Boost-Keybind verwenden
 
@@ -66,7 +66,7 @@ Felder im Modul:
    f. int rocketSlot = findRocket(player, prefer_hotbar.get())
    g. Wenn rocketSlot == -1:
         // Kein Feuerwerk → Warnung in ActionBar
-        player.sendMessage(Text.translatable("mandatory.firework_boost.no_rockets"), true)
+        player.sendMessage(Text.translatable("noctra.firework_boost.no_rockets"), true)
         cooldownRemaining = 40  // 2s Cooldown für die Warnung
         return
    h. Boost auslösen:
@@ -177,17 +177,17 @@ mit dem entsprechenden Hotbar-Index-Slot aus, ohne das Cursor-Item zu benutzen.
 ## Translation Keys
 
 ```json
-"mandatory.firework_boost.name": "Firework Boost",
-"mandatory.firework_boost.description": "Automatically uses firework rockets to maintain glide speed.",
-"mandatory.firework_boost.min_speed": "Min Speed (b/s)",
-"mandatory.firework_boost.cooldown_ticks": "Boost Cooldown (ticks)",
-"mandatory.firework_boost.prefer_hotbar": "Prefer Hotbar",
-"mandatory.firework_boost.no_rockets": "No fireworks in inventory!"
+"noctra.firework_boost.name": "Firework Boost",
+"noctra.firework_boost.description": "Automatically uses firework rockets to maintain glide speed.",
+"noctra.firework_boost.min_speed": "Min Speed (b/s)",
+"noctra.firework_boost.cooldown_ticks": "Boost Cooldown (ticks)",
+"noctra.firework_boost.prefer_hotbar": "Prefer Hotbar",
+"noctra.firework_boost.no_rockets": "No fireworks in inventory!"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/firework_boost.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/firework_boost.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Feuerwerksrakete die nach links-oben fliegt, mit kleinem Flammen-Trail.
 Alternativ eine Elytra-Silhouette mit einer Rakete darunter. Pixel-Art, orange/gelb auf

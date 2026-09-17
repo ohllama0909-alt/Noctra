@@ -4,12 +4,12 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/hit_color/HitColorModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.hit_color`
+**Package:** `de.snenjih.noctra.modules.impl.hit_color`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/hit_color/HitColorModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.hit_color`
+- Package: `de.snenjih.noctra.modules.impl.hit_color`
 - Implementiert HudElement: Nein (Mixin-basiert)
 - `ColorSetting` für Trefferfarbe verwenden
 
@@ -116,20 +116,20 @@ In HitColorMixin.onRenderVignette(DrawContext ctx, Entity entity, CallbackInfo c
 - `opacityFactor > 1.0`: Stärkt den Effekt über Vanilla hinaus — nur durch Setting-Clamp begrenzt (Max 2.0).
 - `RenderSystem.enableBlend()` vergessen: Farbe wird opak gerendert, ignoriert Alpha-Kanal.
 - Spieler ist in Wasser und verliert Hunger gleichzeitig: Beide Trigger rufen `renderVignetteOverlay` auf. Der `hurtTime`-Check trennt Hurt-Flash vom restlichen Overlay-Rendering.
-- Mixin-Registrierung: `HitColorMixin` in `mandatory.mixins.json` eintragen.
+- Mixin-Registrierung: `HitColorMixin` in `noctra.mixins.json` eintragen.
 
 ## Translation Keys
 
 ```json
-"mandatory.hit_color.name": "Hit Color",
-"mandatory.hit_color.description": "Customize or disable the red hurt flash when taking damage.",
-"mandatory.hit_color.hit_color": "Hit Color",
-"mandatory.hit_color.opacity_factor": "Opacity Factor",
-"mandatory.hit_color.disable_flash": "Disable Flash"
+"noctra.hit_color.name": "Hit Color",
+"noctra.hit_color.description": "Customize or disable the red hurt flash when taking damage.",
+"noctra.hit_color.hit_color": "Hit Color",
+"noctra.hit_color.opacity_factor": "Opacity Factor",
+"noctra.hit_color.disable_flash": "Disable Flash"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/hit_color.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/hit_color.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Quadratischer Rahmen mit farbigem Rand (rot/orange Verlauf von außen nach innen), der den Bildschirm-Flash andeutet. Alternativ: Herz-Icon mit einem Blitz-Symbol.

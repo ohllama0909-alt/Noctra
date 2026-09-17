@@ -39,7 +39,7 @@ Alternativ kann das Mixin auf `Screen.renderTooltip()` injizieren, aber das ist 
 // Im Mixin: @Inject(at = @At("RETURN"), method = "getTooltip(...)")
 // CallbackInfoReturnable<List<Text>> cir
 
-FoodTooltipModule module = MandatoryMod.getRegistry().getModule("food_tooltip");
+FoodTooltipModule module = NoctraMod.getRegistry().getModule("food_tooltip");
 if (module == null || !module.isEnabled()) return;
 
 FoodComponent food = stack.get(DataComponentTypes.FOOD);
@@ -96,15 +96,15 @@ if (showEffects.get()):
 ## Translation Keys
 
 ```json
-"mandatory.food_tooltip.name": "Food Tooltip",
-"mandatory.food_tooltip.description": "Shows hunger, saturation, and effects in food item tooltips.",
-"mandatory.food_tooltip.show_saturation": "Show Saturation",
-"mandatory.food_tooltip.show_effects": "Show Effects",
-"mandatory.food_tooltip.show_effective_saturation": "Show Effective Saturation"
+"noctra.food_tooltip.name": "Food Tooltip",
+"noctra.food_tooltip.description": "Shows hunger, saturation, and effects in food item tooltips.",
+"noctra.food_tooltip.show_saturation": "Show Saturation",
+"noctra.food_tooltip.show_effects": "Show Effects",
+"noctra.food_tooltip.show_effective_saturation": "Show Effective Saturation"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/food_tooltip.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/food_tooltip.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Stilisierter Hunger-Bar (Hähnchenkeulen-Symbol) mit einem kleinen Info-"i" oder Lupe. Farbe: Orange/Gelb auf dunklem Hintergrund.

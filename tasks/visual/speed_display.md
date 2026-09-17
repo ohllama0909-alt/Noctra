@@ -4,14 +4,14 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/speed_display/SpeedDisplayModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.speed_display`
+**Package:** `de.snenjih.noctra.modules.impl.speed_display`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/speed_display/SpeedDisplayModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.speed_display`
+- Package: `de.snenjih.noctra.modules.impl.speed_display`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 
 ## Description
 
@@ -116,19 +116,19 @@ onRenderHud(DrawContext ctx, float tickDelta):
 ## Translation Keys
 
 ```json
-"mandatory.speed_display.name": "Speed Display",
-"mandatory.speed_display.description": "Shows your movement speed in blocks per second.",
-"mandatory.speed_display.x_pos": "X Position",
-"mandatory.speed_display.y_pos": "Y Position",
-"mandatory.speed_display.show_label": "Show Label",
-"mandatory.speed_display.decimal_places": "Decimal Places",
-"mandatory.speed_display.show_vertical": "Show Vertical Speed",
-"mandatory.speed_display.text_color": "Text Color",
-"mandatory.speed_display.background": "Background"
+"noctra.speed_display.name": "Speed Display",
+"noctra.speed_display.description": "Shows your movement speed in blocks per second.",
+"noctra.speed_display.x_pos": "X Position",
+"noctra.speed_display.y_pos": "Y Position",
+"noctra.speed_display.show_label": "Show Label",
+"noctra.speed_display.decimal_places": "Decimal Places",
+"noctra.speed_display.show_vertical": "Show Vertical Speed",
+"noctra.speed_display.text_color": "Text Color",
+"noctra.speed_display.background": "Background"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/speed_display.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/speed_display.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Stilisierter Tachometer oder Speedometer-Zeiger; Pfeile die nach rechts zeigen für Bewegung. Blau-weiße Farben.

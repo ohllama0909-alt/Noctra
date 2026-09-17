@@ -4,14 +4,14 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/real_time_clock/RealTimeClockModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.real_time_clock`
+**Package:** `de.snenjih.noctra.modules.impl.real_time_clock`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/real_time_clock/RealTimeClockModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.real_time_clock`
+- Package: `de.snenjih.noctra.modules.impl.real_time_clock`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 
 ## Description
 
@@ -100,19 +100,19 @@ onRenderHud(DrawContext ctx, float tickDelta):
 ## Translation Keys
 
 ```json
-"mandatory.real_time_clock.name": "Real Time Clock",
-"mandatory.real_time_clock.description": "Shows your real system time as an on-screen overlay.",
-"mandatory.real_time_clock.x_pos": "X Position",
-"mandatory.real_time_clock.y_pos": "Y Position",
-"mandatory.real_time_clock.format_24h": "24h Format",
-"mandatory.real_time_clock.show_seconds": "Show Seconds",
-"mandatory.real_time_clock.show_date": "Show Date",
-"mandatory.real_time_clock.text_color": "Text Color",
-"mandatory.real_time_clock.background": "Background"
+"noctra.real_time_clock.name": "Real Time Clock",
+"noctra.real_time_clock.description": "Shows your real system time as an on-screen overlay.",
+"noctra.real_time_clock.x_pos": "X Position",
+"noctra.real_time_clock.y_pos": "Y Position",
+"noctra.real_time_clock.format_24h": "24h Format",
+"noctra.real_time_clock.show_seconds": "Show Seconds",
+"noctra.real_time_clock.show_date": "Show Date",
+"noctra.real_time_clock.text_color": "Text Color",
+"noctra.real_time_clock.background": "Background"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/real_time_clock.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/real_time_clock.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Analoge Uhr mit Zeigern (Pixel-Art) oder digitale Anzeige "12:00" im Retro-7-Segment-Stil; helle Ziffern auf dunklem Hintergrund.

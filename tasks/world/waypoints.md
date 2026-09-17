@@ -4,14 +4,14 @@
 **Category:** WORLD  
 **Status:** [x] DONE  
 **Class:** `modules/impl/waypoints/WaypointsModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.waypoints`
+**Package:** `de.snenjih.noctra.modules.impl.waypoints`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/waypoints/WaypointsModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.waypoints`
+- Package: `de.snenjih.noctra.modules.impl.waypoints`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 - `WaypointConfig`-Klasse im selben Unterordner (`modules/impl/waypoints/WaypointConfig.java`)
 
 ## Description
@@ -167,21 +167,21 @@ Rückgabe `ActionResult.SUCCESS` verhindert, dass die Nachricht an den Server ge
 ## Translation Keys
 
 ```json
-"mandatory.waypoints.name": "Waypoints",
-"mandatory.waypoints.description": "Save locations and display them as HUD markers.",
-"mandatory.waypoints.show_beacons": "Show 3D Beacons",
-"mandatory.waypoints.max_distance": "Max Render Distance",
-"mandatory.waypoints.hud_x": "HUD X",
-"mandatory.waypoints.hud_y": "HUD Y",
-"mandatory.waypoints.cmd.added": "Waypoint added: %s",
-"mandatory.waypoints.cmd.removed": "Waypoint removed: %s",
-"mandatory.waypoints.cmd.not_found": "Waypoint not found: %s",
-"mandatory.waypoints.cmd.limit": "Waypoint limit reached (max 20).",
-"mandatory.waypoints.cmd.cleared": "All waypoints cleared for this dimension."
+"noctra.waypoints.name": "Waypoints",
+"noctra.waypoints.description": "Save locations and display them as HUD markers.",
+"noctra.waypoints.show_beacons": "Show 3D Beacons",
+"noctra.waypoints.max_distance": "Max Render Distance",
+"noctra.waypoints.hud_x": "HUD X",
+"noctra.waypoints.hud_y": "HUD Y",
+"noctra.waypoints.cmd.added": "Waypoint added: %s",
+"noctra.waypoints.cmd.removed": "Waypoint removed: %s",
+"noctra.waypoints.cmd.not_found": "Waypoint not found: %s",
+"noctra.waypoints.cmd.limit": "Waypoint limit reached (max 20).",
+"noctra.waypoints.cmd.cleared": "All waypoints cleared for this dimension."
 ```
 
 ## Icon
 
-**Path:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/waypoints.png`  
+**Path:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/waypoints.png`  
 **Size:** 32×32 PNG  
 **Suggestion:** Ein stilisierter Standort-Pin (Tropfenform, unten spitz) mit einem weißen Kreuz oder Stern im Inneren auf dunklem Hintergrund. Alternativ: Kompassnadel + kleiner Stern in der Ecke.

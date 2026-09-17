@@ -4,7 +4,7 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/altitude_hud/AltitudeHudModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.altitude_hud`
+**Package:** `de.snenjih.noctra.modules.impl.altitude_hud`
 
 ## Description
 
@@ -117,28 +117,28 @@ onRenderHud(ctx, tickDelta):
 ## Translation Keys
 
 ```json
-"mandatory.altitude_hud.name": "Altitude HUD",
-"mandatory.altitude_hud.description": "Shows your height above the terrain below using a downward block scan.",
-"mandatory.altitude_hud.bg_color": "Background Color",
-"mandatory.altitude_hud.border_color": "Border Color",
-"mandatory.altitude_hud.text_color": "Text Color",
-"mandatory.altitude_hud.text_shadow": "Text Shadow",
-"mandatory.altitude_hud.text_scale": "Text Scale",
-"mandatory.altitude_hud.show_background": "Show Background",
-"mandatory.altitude_hud.max_raycast_depth": "Max Scan Depth",
-"mandatory.altitude_hud.warn_threshold": "Warn Below (blocks)",
-"mandatory.altitude_hud.crit_threshold": "Danger Below (blocks)",
-"mandatory.altitude_hud.color_safe": "Color Safe",
-"mandatory.altitude_hud.color_warn": "Color Warn",
-"mandatory.altitude_hud.color_danger": "Color Danger",
-"mandatory.altitude_hud.show_sea_diff": "Show Sea Level Diff",
-"mandatory.altitude_hud.hide_when_grounded": "Hide When Grounded",
-"mandatory.altitude_hud.show_bar": "Show Bar",
-"mandatory.altitude_hud.only_when_flying": "Only When Flying"
+"noctra.altitude_hud.name": "Altitude HUD",
+"noctra.altitude_hud.description": "Shows your height above the terrain below using a downward block scan.",
+"noctra.altitude_hud.bg_color": "Background Color",
+"noctra.altitude_hud.border_color": "Border Color",
+"noctra.altitude_hud.text_color": "Text Color",
+"noctra.altitude_hud.text_shadow": "Text Shadow",
+"noctra.altitude_hud.text_scale": "Text Scale",
+"noctra.altitude_hud.show_background": "Show Background",
+"noctra.altitude_hud.max_raycast_depth": "Max Scan Depth",
+"noctra.altitude_hud.warn_threshold": "Warn Below (blocks)",
+"noctra.altitude_hud.crit_threshold": "Danger Below (blocks)",
+"noctra.altitude_hud.color_safe": "Color Safe",
+"noctra.altitude_hud.color_warn": "Color Warn",
+"noctra.altitude_hud.color_danger": "Color Danger",
+"noctra.altitude_hud.show_sea_diff": "Show Sea Level Diff",
+"noctra.altitude_hud.hide_when_grounded": "Hide When Grounded",
+"noctra.altitude_hud.show_bar": "Show Bar",
+"noctra.altitude_hud.only_when_flying": "Only When Flying"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/altitude_hud.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/altitude_hud.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Elytra-Silhouette oben, Terrain-Linie unten, vertikaler Pfeil dazwischen mit Zahlenbeschriftung.

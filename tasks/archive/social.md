@@ -1,4 +1,4 @@
-# MandatoryMod — Social System
+# NoctraMod — Social System
 
 **Status:** ARCHIVED / FUTURE FEATURE  
 **Typ:** Context Document + PRD  
@@ -9,7 +9,7 @@
 
 ## 1. Kontext & Hintergrund
 
-MandatoryMod ist eine rein client-seitige Fabric-Mod für Minecraft 1.21.11 (Env: `client`). Sie fügt kein Server-Content hinzu, sondern nur client-seitige Features. Das Social-System sprengt diesen Rahmen absichtlich: Es ist das erste Feature der Mod, das externe Infrastruktur außerhalb von Minecraft erfordert. Die Entscheidung, es trotzdem zu bauen, ergibt sich aus der Community-Vision: Die Mod soll nicht nur Tools liefern, sondern eine eigene Spieler-Community um sich aufbauen.
+NoctraMod ist eine rein client-seitige Fabric-Mod für Minecraft 1.21.11 (Env: `client`). Sie fügt kein Server-Content hinzu, sondern nur client-seitige Features. Das Social-System sprengt diesen Rahmen absichtlich: Es ist das erste Feature der Mod, das externe Infrastruktur außerhalb von Minecraft erfordert. Die Entscheidung, es trotzdem zu bauen, ergibt sich aus der Community-Vision: Die Mod soll nicht nur Tools liefern, sondern eine eigene Spieler-Community um sich aufbauen.
 
 Das Social-System besteht aus vier Teilkomponenten:
 
@@ -248,7 +248,7 @@ CREATE TABLE streaks (
 ### Paketstruktur
 
 ```
-de.snenjih.mandatory.social/
+de.snenjih.noctra.social/
     SocialManager.java          -- Singleton, verwaltet Auth + alle Services
     auth/
         MojangAuthFlow.java     -- joinServer() + POST /auth/verify → JWT
@@ -279,7 +279,7 @@ de.snenjih.mandatory.social/
 
 ### Integration in bestehende Mod
 
-- **`MandatoryMod.onInitializeClient()`**: `SocialManager.init()` aufrufen, asynchron (kein Block des Main-Thread)
+- **`NoctraMod.onInitializeClient()`**: `SocialManager.init()` aufrufen, asynchron (kein Block des Main-Thread)
 - **`MainMenuScreen`**: Button "Social" → `SocialScreen` öffnen
 - **`ScreenshotGalleryScreen`**: Button "Teilen" an Screenshot-Kacheln → `ScreenshotShareService.share(file, friendUuids)`
 - **`NotificationManager`**: Eingehende WS-Events als In-Game-Notification anzeigen (Freundschaftsanfrage, neue Nachricht, Streak-Erinnerung)

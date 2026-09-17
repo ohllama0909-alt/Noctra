@@ -9,4 +9,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "mandatory"
+rootProject.name = "noctra"

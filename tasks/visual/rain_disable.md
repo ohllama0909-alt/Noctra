@@ -4,12 +4,12 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/rain_disable/RainDisableModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.rain_disable`
+**Package:** `de.snenjih.noctra.modules.impl.rain_disable`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/rain_disable/RainDisableModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.rain_disable`
+- Package: `de.snenjih.noctra.modules.impl.rain_disable`
 - Implementiert HudElement: Nein (Mixin-basiert — WorldRenderer oder GameRenderer)
 - Benötigt Mixin auf Regen-Rendering
 
@@ -53,14 +53,14 @@ Keine direkten Lifecycle-Event-Hooks. Logik steckt im Mixin.
 // RainDisableMixin:
 @Inject(at = @At("HEAD"), method = "renderWeather(...)", cancellable = true)
 private void onRenderWeather(..., CallbackInfo ci):
-    RainDisableModule module = MandatoryMod.getRegistry().getModule("rain_disable")
+    RainDisableModule module = NoctraMod.getRegistry().getModule("rain_disable")
     if (module != null && module.isEnabled()):
         ci.cancel()
 
 // RainGradientMixin (optional, nur wenn alsoDisableThunder aktiv):
 @Inject(at = @At("HEAD"), method = "getRainGradient(F)F", cancellable = true)
 private void onGetRainGradient(float delta, CallbackInfoReturnable<Float> cir):
-    RainDisableModule module = MandatoryMod.getRegistry().getModule("rain_disable")
+    RainDisableModule module = NoctraMod.getRegistry().getModule("rain_disable")
     if (module != null && module.isEnabled() && module.isAlsoDisableThunder()):
         cir.setReturnValue(0f)
 ```
@@ -79,13 +79,13 @@ private void onGetRainGradient(float delta, CallbackInfoReturnable<Float> cir):
 ## Translation Keys
 
 ```json
-"mandatory.rain_disable.name": "Rain Disable",
-"mandatory.rain_disable.description": "Disables rain and snow rendering client-side without affecting server weather.",
-"mandatory.rain_disable.also_disable_thunder": "Disable Thunder Effect"
+"noctra.rain_disable.name": "Rain Disable",
+"noctra.rain_disable.description": "Disables rain and snow rendering client-side without affecting server weather.",
+"noctra.rain_disable.also_disable_thunder": "Disable Thunder Effect"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/rain_disable.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/rain_disable.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Regentropfen mit einem roten Durchstreichungs-X oder Wolke mit X. Farbe: Blau (Regen) mit rotem X auf dunklem Hintergrund.

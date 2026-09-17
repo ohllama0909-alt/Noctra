@@ -4,12 +4,12 @@
 **Category:** WORLD  
 **Status:** [x] DONE  
 **Class:** `modules/impl/slime_chunks/SlimeChunksModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.slime_chunks`
+**Package:** `de.snenjih.noctra.modules.impl.slime_chunks`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/slime_chunks/SlimeChunksModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.slime_chunks`
+- Package: `de.snenjih.noctra.modules.impl.slime_chunks`
 - Implementiert HudElement: Nein (Welt-Rendering via `onRenderWorld`)
 - Verwendet `WorldRenderContext` aus `net.fabricmc.fabric.api.client.rendering.v1.world`
 
@@ -142,7 +142,7 @@ onRenderWorld(WorldRenderContext ctx):
 // Befehl: /mandatory slimeseed <long>
 // Falls Seed ungültig (kein Long): Chat-Fehlermeldung
 // Erfolgreich: module.setSeed(seed), hasSeed = true
-// Chat-Bestätigung: "[MandatoryMod] Slime chunk seed set to: <seed>"
+// Chat-Bestätigung: "[NoctraMod] Slime chunk seed set to: <seed>"
 ```
 
 ### Edge Cases
@@ -162,16 +162,16 @@ onRenderWorld(WorldRenderContext ctx):
 ## Translation Keys
 
 ```json
-"mandatory.slime_chunks.name": "Slime Chunks",
-"mandatory.slime_chunks.description": "Highlights slime chunks in the world based on the world seed.",
-"mandatory.slime_chunks.radius": "Chunk Radius",
-"mandatory.slime_chunks.show_non_slime": "Show Non-Slime",
-"mandatory.slime_chunks.opacity": "Overlay Opacity",
-"mandatory.slime_chunks.height_offset": "Y Offset"
+"noctra.slime_chunks.name": "Slime Chunks",
+"noctra.slime_chunks.description": "Highlights slime chunks in the world based on the world seed.",
+"noctra.slime_chunks.radius": "Chunk Radius",
+"noctra.slime_chunks.show_non_slime": "Show Non-Slime",
+"noctra.slime_chunks.opacity": "Overlay Opacity",
+"noctra.slime_chunks.height_offset": "Y Offset"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/slime_chunks.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/slime_chunks.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Stilisierter grüner Slime-Würfel auf einem Schachbrett-Gitter (Chunk-Grid). Farbe: Leuchtendes Grün auf dunklem Hintergrund.

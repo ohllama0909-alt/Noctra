@@ -179,7 +179,7 @@ public interface PlayerInventoryAccessor {
 }
 ```
 
-Register in `mandatory.mixins.json` under `"client"` array.
+Register in `noctra.mixins.json` under `"client"` array.
 
 **Alternative without accessor:** Send `UpdateSelectedSlotC2SPacket` only (no local update). The server will update the selection and the client receives the confirmation. The local held-item display lags by one tick but eating still works correctly because the server drives `interactItem`.
 
@@ -208,16 +208,16 @@ private void stopEating(MinecraftClient client)
 ## Translation Keys
 
 ```json
-"mandatory.auto_eat.name": "Auto Eat",
-"mandatory.auto_eat.description": "Automatically eats food when your hunger drops below the threshold.",
-"mandatory.auto_eat.hunger_threshold": "Eat Below",
-"mandatory.auto_eat.prefer_best": "Prefer Best Food",
-"mandatory.auto_eat.search_inventory": "Search Inventory",
-"mandatory.auto_eat.eat_golden_apple": "Eat Golden Apples"
+"noctra.auto_eat.name": "Auto Eat",
+"noctra.auto_eat.description": "Automatically eats food when your hunger drops below the threshold.",
+"noctra.auto_eat.hunger_threshold": "Eat Below",
+"noctra.auto_eat.prefer_best": "Prefer Best Food",
+"noctra.auto_eat.search_inventory": "Search Inventory",
+"noctra.auto_eat.eat_golden_apple": "Eat Golden Apples"
 ```
 
 ## Icon
 
-**Path:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/auto_eat.png`  
+**Path:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/auto_eat.png`  
 **Size:** 32×32 PNG  
 **Suggestion:** A drumstick (cooked chicken leg) icon with a small hunger-bar indicator below it or a small sparkle/arrow indicating automation. Use warm orange/brown tones matching the vanilla food icons.

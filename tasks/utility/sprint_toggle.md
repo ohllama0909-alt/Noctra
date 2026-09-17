@@ -71,14 +71,14 @@ onClientTick(MinecraftClient client):
 ## Translation Keys
 
 ```json
-"mandatory.sprint_toggle.name": "Sprint Toggle",
-"mandatory.sprint_toggle.description": "Automatically sprints without holding the sprint key.",
-"mandatory.sprint_toggle.sprint_in_water": "Sprint in Water",
-"mandatory.sprint_toggle.sprint_in_air": "Sprint in Air"
+"noctra.sprint_toggle.name": "Sprint Toggle",
+"noctra.sprint_toggle.description": "Automatically sprints without holding the sprint key.",
+"noctra.sprint_toggle.sprint_in_water": "Sprint in Water",
+"noctra.sprint_toggle.sprint_in_air": "Sprint in Air"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/sprint_toggle.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/sprint_toggle.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Stilisierter rennender Charakter oder Schuh mit Bewegungs-Linien. Farbe: Hellgrün/Türkis auf dunklem Hintergrund.

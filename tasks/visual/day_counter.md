@@ -4,7 +4,7 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/day_counter/DayCounterModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.day_counter`
+**Package:** `de.snenjih.noctra.modules.impl.day_counter`
 
 ## Description
 
@@ -107,26 +107,26 @@ onRenderHud(ctx, tickDelta):
 ## Translation Keys
 
 ```json
-"mandatory.day_counter.name": "Day Counter",
-"mandatory.day_counter.description": "Shows the current Minecraft day and time of day.",
-"mandatory.day_counter.bg_color": "Background Color",
-"mandatory.day_counter.border_color": "Border Color",
-"mandatory.day_counter.text_color": "Text Color",
-"mandatory.day_counter.text_shadow": "Text Shadow",
-"mandatory.day_counter.text_scale": "Text Scale",
-"mandatory.day_counter.show_background": "Show Background",
-"mandatory.day_counter.show_time_of_day": "Show Time of Day",
-"mandatory.day_counter.show_moon_phase": "Show Moon Phase",
-"mandatory.day_counter.show_night_warning": "Show Night Warning",
-"mandatory.day_counter.compact_mode": "Compact Mode",
-"mandatory.day_counter.time_format": "24h Format",
-"mandatory.day_counter.color_day": "Day Color",
-"mandatory.day_counter.color_night": "Night Color",
-"mandatory.day_counter.moon_phase_names": "Moon Phase Names"
+"noctra.day_counter.name": "Day Counter",
+"noctra.day_counter.description": "Shows the current Minecraft day and time of day.",
+"noctra.day_counter.bg_color": "Background Color",
+"noctra.day_counter.border_color": "Border Color",
+"noctra.day_counter.text_color": "Text Color",
+"noctra.day_counter.text_shadow": "Text Shadow",
+"noctra.day_counter.text_scale": "Text Scale",
+"noctra.day_counter.show_background": "Show Background",
+"noctra.day_counter.show_time_of_day": "Show Time of Day",
+"noctra.day_counter.show_moon_phase": "Show Moon Phase",
+"noctra.day_counter.show_night_warning": "Show Night Warning",
+"noctra.day_counter.compact_mode": "Compact Mode",
+"noctra.day_counter.time_format": "24h Format",
+"noctra.day_counter.color_day": "Day Color",
+"noctra.day_counter.color_night": "Night Color",
+"noctra.day_counter.moon_phase_names": "Moon Phase Names"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/day_counter.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/day_counter.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Sonne und Mond nebeneinander über einem Kalenderblatt. Pixel-Art, gelb/blau zweigeteilt.

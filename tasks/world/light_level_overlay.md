@@ -4,12 +4,12 @@
 **Category:** WORLD  
 **Status:** [x] DONE  
 **Class:** `modules/impl/light_level_overlay/LightLevelOverlayModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.light_level_overlay`
+**Package:** `de.snenjih.noctra.modules.impl.light_level_overlay`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/light_level_overlay/LightLevelOverlayModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.light_level_overlay`
+- Package: `de.snenjih.noctra.modules.impl.light_level_overlay`
 - Implementiert HudElement: Nein (Welt-Rendering via `onRenderWorld`)
 - Verwendet `WorldRenderContext` aus `net.fabricmc.fabric.api.client.rendering.v1.world`
 
@@ -156,16 +156,16 @@ colorForLevel(int level) → int ARGB:
 ## Translation Keys
 
 ```json
-"mandatory.light_level_overlay.name": "Light Level Overlay",
-"mandatory.light_level_overlay.description": "Shows light levels on blocks to warn about mob spawn locations.",
-"mandatory.light_level_overlay.radius": "Radius",
-"mandatory.light_level_overlay.only_dangerous": "Only Dangerous Blocks",
-"mandatory.light_level_overlay.use_block_light": "Use Block Light Only",
-"mandatory.light_level_overlay.scan_interval": "Scan Interval"
+"noctra.light_level_overlay.name": "Light Level Overlay",
+"noctra.light_level_overlay.description": "Shows light levels on blocks to warn about mob spawn locations.",
+"noctra.light_level_overlay.radius": "Radius",
+"noctra.light_level_overlay.only_dangerous": "Only Dangerous Blocks",
+"noctra.light_level_overlay.use_block_light": "Use Block Light Only",
+"noctra.light_level_overlay.scan_interval": "Scan Interval"
 ```
 
 ## Icon
 
-**Path:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/light_level_overlay.png`  
+**Path:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/light_level_overlay.png`  
 **Size:** 32×32 PNG  
 **Suggestion:** Ein Glühsymbol (Glühbirne oder Sonne) mit einer kleinen roten Warnung (Ausrufezeichen oder Totenkopf) in der unteren rechten Ecke. Alternativ: Ein Block mit der Zahl "0" in Rot darauf, und rechts daneben ein Block mit "15" in Grün — symbolisiert das Lichtwert-Spektrum.

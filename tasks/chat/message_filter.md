@@ -4,12 +4,12 @@
 **Category:** CHAT
 **Status:** [x] DONE
 **Class:** `modules/impl/message_filter/MessageFilterModule.java`
-**Package:** `de.snenjih.mandatory.modules.impl.message_filter`
+**Package:** `de.snenjih.noctra.modules.impl.message_filter`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/message_filter/MessageFilterModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.message_filter`
+- Package: `de.snenjih.noctra.modules.impl.message_filter`
 - Implementiert HudElement: Nein
 - `TextSetting` für Filter-Pattern verwenden
 
@@ -37,14 +37,14 @@ has no string list type. They are persisted in a separate JSON file (see Externa
 
 ## Implementation
 
-### Wire-up in MandatoryMod
+### Wire-up in NoctraMod
 
 The existing outgoing-chat handler already calls `ChatCommandDispatcher.handle()`. The new
 `.filter` sub-command must be registered there (or in a dedicated handler called from
 `ChatCommandDispatcher`). See "Chat Commands" section below.
 
 For incoming message suppression, add `ALLOW_CHAT` and `ALLOW_GAME` listeners in
-`MandatoryMod.registerEvents()` that delegate to the module (similar structure to the
+`NoctraMod.registerEvents()` that delegate to the module (similar structure to the
 `mention_highlight` receive-event wiring described in `mention_highlight.md`):
 
 ```java
@@ -99,7 +99,7 @@ Filter patterns are stored in a separate flat JSON file:
 **Helper class:** `config/FilterConfig.java`
 
 ```java
-package de.snenjih.mandatory.config;
+package de.snenjih.noctra.config;
 
 import com.google.gson.*;
 import net.fabricmc.loader.api.FabricLoader;
@@ -286,17 +286,17 @@ public void onRenderHud(DrawContext ctx, float tickDelta) {
 ## Translation Keys
 
 ```json
-"mandatory.module.message_filter.name": "Message Filter",
-"mandatory.module.message_filter.description": "Hides chat messages matching your filter list.",
-"mandatory.message_filter.setting.use_regex": "Use Regex",
-"mandatory.message_filter.setting.show_counter": "Show Filter Count"
+"noctra.module.message_filter.name": "Message Filter",
+"noctra.module.message_filter.description": "Hides chat messages matching your filter list.",
+"noctra.message_filter.setting.use_regex": "Use Regex",
+"noctra.message_filter.setting.show_counter": "Show Filter Count"
 ```
 
 ---
 
 ## Icon
 
-**Path:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/message_filter.png`
+**Path:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/message_filter.png`
 **Size:** 32x32 PNG
 **Suggestion:** A funnel/filter shape with an X or slash through a speech bubble, rendered in
 a muted red to convey blocking/suppression.

@@ -4,7 +4,7 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/tps_display/TpsDisplayModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.tps_display`
+**Package:** `de.snenjih.noctra.modules.impl.tps_display`
 
 ## Description
 
@@ -130,25 +130,25 @@ ctx.getMatrices().pop();
 ## Translation Keys
 
 ```json
-"mandatory.tps_display.name": "TPS Display",
-"mandatory.tps_display.description": "Estimates and shows server ticks per second.",
-"mandatory.tps_display.bg_color": "Background Color",
-"mandatory.tps_display.border_color": "Border Color",
-"mandatory.tps_display.text_color": "Text Color",
-"mandatory.tps_display.text_shadow": "Text Shadow",
-"mandatory.tps_display.text_scale": "Text Scale",
-"mandatory.tps_display.show_background": "Show Background",
-"mandatory.tps_display.show_bar": "Show Bar",
-"mandatory.tps_display.good_threshold": "Good TPS (≥)",
-"mandatory.tps_display.bad_threshold": "Bad TPS (<)",
-"mandatory.tps_display.color_good": "Color Good",
-"mandatory.tps_display.color_warn": "Color Warn",
-"mandatory.tps_display.color_bad": "Color Bad",
-"mandatory.tps_display.show_mspt": "Show MSPT"
+"noctra.tps_display.name": "TPS Display",
+"noctra.tps_display.description": "Estimates and shows server ticks per second.",
+"noctra.tps_display.bg_color": "Background Color",
+"noctra.tps_display.border_color": "Border Color",
+"noctra.tps_display.text_color": "Text Color",
+"noctra.tps_display.text_shadow": "Text Shadow",
+"noctra.tps_display.text_scale": "Text Scale",
+"noctra.tps_display.show_background": "Show Background",
+"noctra.tps_display.show_bar": "Show Bar",
+"noctra.tps_display.good_threshold": "Good TPS (≥)",
+"noctra.tps_display.bad_threshold": "Bad TPS (<)",
+"noctra.tps_display.color_good": "Color Good",
+"noctra.tps_display.color_warn": "Color Warn",
+"noctra.tps_display.color_bad": "Color Bad",
+"noctra.tps_display.show_mspt": "Show MSPT"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/tps_display.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/tps_display.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Stilisiertes Zahnrad mit einer Uhr/Zifferblatt-Überlagerung. Grüner Tick-Symbol unten rechts.

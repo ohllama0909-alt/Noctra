@@ -4,14 +4,14 @@
 **Category:** COMBAT  
 **Status:** [x] DONE  
 **Class:** `modules/impl/cps_counter/CpsCounterModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.cps_counter`
+**Package:** `de.snenjih.noctra.modules.impl.cps_counter`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/cps_counter/CpsCounterModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.cps_counter`
+- Package: `de.snenjih.noctra.modules.impl.cps_counter`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 
 ## Description
 
@@ -160,18 +160,18 @@ Empfehlung: Option 3 (statische Methode), da sie kein Registry-API-Refactoring e
 ## Translation Keys
 
 ```json
-"mandatory.cps_counter.name": "CPS Counter",
-"mandatory.cps_counter.description": "Shows your clicks per second using a 1-second sliding window.",
-"mandatory.cps_counter.x_pos": "X Position",
-"mandatory.cps_counter.y_pos": "Y Position",
-"mandatory.cps_counter.track_left": "Track Left Click",
-"mandatory.cps_counter.track_right": "Track Right Click",
-"mandatory.cps_counter.background": "Background",
-"mandatory.cps_counter.text_color": "Text Color"
+"noctra.cps_counter.name": "CPS Counter",
+"noctra.cps_counter.description": "Shows your clicks per second using a 1-second sliding window.",
+"noctra.cps_counter.x_pos": "X Position",
+"noctra.cps_counter.y_pos": "Y Position",
+"noctra.cps_counter.track_left": "Track Left Click",
+"noctra.cps_counter.track_right": "Track Right Click",
+"noctra.cps_counter.background": "Background",
+"noctra.cps_counter.text_color": "Text Color"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/cps_counter.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/cps_counter.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Eine stilisierte Maus von oben, mit einem Pfeil oder Zähler-Symbol darüber. Alternativ: Drei nach rechts zunehmend große vertikale Balken (wie ein "schnelles" Balkendiagramm) mit einem kleinen Klick-Cursor-Symbol.

@@ -4,14 +4,14 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/armor_status_hud/ArmorStatusHudModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.armor_status_hud`
+**Package:** `de.snenjih.noctra.modules.impl.armor_status_hud`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/armor_status_hud/ArmorStatusHudModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.armor_status_hud`
+- Package: `de.snenjih.noctra.modules.impl.armor_status_hud`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 
 ## Description
 
@@ -104,20 +104,20 @@ onRenderHud(DrawContext ctx, float tickDelta):
 ## Translation Keys
 
 ```json
-"mandatory.armor_status_hud.name": "Armor Status HUD",
-"mandatory.armor_status_hud.description": "Shows durability bars for all equipped armor pieces.",
-"mandatory.armor_status_hud.x_pos": "X Position",
-"mandatory.armor_status_hud.y_pos": "Y Position",
-"mandatory.armor_status_hud.show_icons": "Show Icons",
-"mandatory.armor_status_hud.bar_width": "Bar Width",
-"mandatory.armor_status_hud.warn_threshold": "Warn Threshold",
-"mandatory.armor_status_hud.color_full": "Color Full",
-"mandatory.armor_status_hud.color_warn": "Color Warn",
-"mandatory.armor_status_hud.background": "Background"
+"noctra.armor_status_hud.name": "Armor Status HUD",
+"noctra.armor_status_hud.description": "Shows durability bars for all equipped armor pieces.",
+"noctra.armor_status_hud.x_pos": "X Position",
+"noctra.armor_status_hud.y_pos": "Y Position",
+"noctra.armor_status_hud.show_icons": "Show Icons",
+"noctra.armor_status_hud.bar_width": "Bar Width",
+"noctra.armor_status_hud.warn_threshold": "Warn Threshold",
+"noctra.armor_status_hud.color_full": "Color Full",
+"noctra.armor_status_hud.color_warn": "Color Warn",
+"noctra.armor_status_hud.background": "Background"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/armor_status_hud.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/armor_status_hud.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Vier horizontale Balken untereinander (Helm-Icon + Balken, Brust-Icon + Balken etc.), der unterste Balken rot als Warnung. Stil: Pixel-Art passend zum Minecraft-Inventar.

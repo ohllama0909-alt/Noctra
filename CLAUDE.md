@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**MandatoryMod** is a client-side Fabric mod for Minecraft 1.21.11. It is a vanilla+ mod — no new items, blocks, or server-side content. All features are purely client-side and optional. The mod adds a carousel-style menu (accessible from the pause menu) for toggling modular features.
+**Noctra** is a client-side Fabric mod for Minecraft 1.21.11. It is a vanilla+ mod — no new items, blocks, or server-side content. All features are purely client-side and optional. The mod adds a carousel-style menu (accessible from the pause menu) for toggling modular features.
 
-- **Group ID / Package root:** `de.Snenjih` / `de.snenjih.mandatory`
+- **Group ID / Package root:** `de.Snenjih` / `de.snenjih.noctra`
 - **Mod ID:** `mandatory`
-- **GitHub:** https://github.com/Snenjih/Mandatory
+- **GitHub:** https://github.com/Snenjih/Noctra
 
 ---
 
@@ -31,7 +31,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ./scripts/bump-version.sh 1.2.3 -y
 ```
 
-The release JAR is `build/libs/mandatory-<version>.jar`. The `-dev` and `-sources` JARs are build artifacts only.
+The release JAR is `build/libs/noctra-<version>.jar`. The `-dev` and `-sources` JARs are build artifacts only.
 
 ---
 
@@ -62,7 +62,7 @@ Every feature is a self-contained class **extending `BaseModule`** (in `modules/
 public class MyFeatureModule extends BaseModule {
     public MyFeatureModule() {
         super("my_feature", "My Feature", "Description.", ModuleCategory.UTILITY,
-              Identifier.of("mandatory", "modules/my_feature"));
+              Identifier.of("noctra", "modules/my_feature"));
         // optional: registerKeybind("key.mandatory.my_feature", GLFW.GLFW_KEY_UNKNOWN);
         // optional: addSetting(new BooleanSetting("some_opt", "Label", false));
     }
@@ -80,19 +80,19 @@ Features subscribe to Minecraft events inside `onEnable()` and unsubscribe insid
 ### Adding a New Feature
 
 1. Create `modules/impl/my_feature/MyFeatureModule.java` extending `BaseModule`.
-   Package: `de.snenjih.mandatory.modules.impl.my_feature`
-2. Add one line in `MandatoryMod.onInitializeClient()`:
+   Package: `de.snenjih.noctra.modules.impl.my_feature`
+2. Add one line in `Noctra.onInitializeClient()`:
    ```java
    registry.register(new MyFeatureModule());
    ```
 3. Add a 32×32 PNG icon to:
    ```
-   src/main/resources/assets/mandatory/textures/gui/sprites/modules/<feature_id>.png
+   src/main/resources/assets/noctra/textures/gui/sprites/modules/<feature_id>.png
    ```
-   Return `Identifier.of("mandatory", "modules/<feature_id>")` from `getIconTexture()`.
+   Return `Identifier.of("noctra", "modules/<feature_id>")` from `getIconTexture()`.
    Minecraft's GUI sprite atlas picks up anything under `textures/gui/sprites/` automatically.
-4. Add translation keys to `assets/mandatory/lang/en_us.json` if needed.
-5. If the feature needs to intercept game events, write a new Mixin in `mixin/` and register it in `mandatory.mixins.json`.
+4. Add translation keys to `assets/noctra/lang/en_us.json` if needed.
+5. If the feature needs to intercept game events, write a new Mixin in `mixin/` and register it in `noctra.mixins.json`.
 
 ### Adding a HUD Element Module
 
@@ -114,7 +114,7 @@ public class MyHudModule extends BaseModule implements HudElement {
 }
 ```
 
-In `MandatoryMod.onInitializeClient()`, after `registry.register(myHudModule)`:
+In `Noctra.onInitializeClient()`, after `registry.register(myHudModule)`:
 ```java
 HudRegistry.register(myHudModule, defaultX, defaultY);
 ```
@@ -134,9 +134,9 @@ Use `beginSection("Section Name")` before `addSetting(...)` to group settings vi
 
 ### Registry & Config
 
-`ModuleRegistry` (singleton, created in `MandatoryMod`) holds the ordered list of modules shown in the carousel. `ModuleRegistry.register()` restores the saved enabled-state from `ModConfig` before adding the module to the list. `ModuleRegistry.toggle()` flips a module and immediately persists via `ModConfig`.
+`ModuleRegistry` (singleton, created in `Noctra`) holds the ordered list of modules shown in the carousel. `ModuleRegistry.register()` restores the saved enabled-state from `ModConfig` before adding the module to the list. `ModuleRegistry.toggle()` flips a module and immediately persists via `ModConfig`.
 
-`ModConfig` reads/writes `<minecraft>/config/mandatory.json` as nested JSON (v2 format):
+`ModConfig` reads/writes `<minecraft>/config/noctra.json` as nested JSON (v2 format):
 ```json
 { "_version": 2, "elytra_swap": { "enabled": true, "some_setting": 3.0 } }
 ```
@@ -145,7 +145,7 @@ Old flat-boolean files (v1) are auto-migrated on load. `ModConfig.getInstance()`
 
 ### Menu / Carousel
 
-`CarouselScreen` extends `Screen` and is opened from the pause menu via `GameMenuScreenMixin` (injects a "Mandatory" button above the vanilla "Back to Game" button).
+`CarouselScreen` extends `Screen` and is opened from the pause menu via `GameMenuScreenMixin` (injects a "Noctra" button above the vanilla "Back to Game" button).
 
 - Scroll physics: `scrollVelocity` decays by factor `0.85` each tick; snaps to nearest card index when velocity drops below `0.5`.
 - The active card is `Math.round(scrollOffset / CARD_SPACING)`.
@@ -156,7 +156,7 @@ Old flat-boolean files (v1) are auto-migrated on load. `ModConfig.getInstance()`
 
 | Class | Target | Purpose |
 |---|---|---|
-| `GameMenuScreenMixin` | `GameMenuScreen.init` | Adds "Mandatory" button to pause menu |
+| `GameMenuScreenMixin` | `GameMenuScreen.init` | Adds "Noctra" button to pause menu |
 | `ClientInteractionMixin` | `ClientPlayerInteractionManager.interactItem` | Routes right-click — calls `module.onInteractItem()` on all enabled modules in order |
 
 Mixins are `@At("HEAD")` + `cancellable = true`. A module returns `ActionResult.PASS` to let vanilla continue, `SUCCESS` or `FAIL` to cancel. The interaction mixin only delegates to modules that specifically handle the event — other modules never see it.
@@ -172,7 +172,7 @@ These are NOT obvious from class names; they caused build failures and must be f
 - **`HudRenderCallback` is `@Deprecated`** → use `HudElementRegistry.addLast(Identifier, HudElement)` from `net.fabricmc.fabric.api.client.rendering.v1.hud`
 - **`WorldRenderContext` / `WorldRenderEvents`** live in the **subpackage** `net.fabricmc.fabric.api.client.rendering.v1.world` — not `.v1` directly
 - **`RenderTickCounter.getTickDelta()` does not exist** → use `getTickProgress(boolean)`
-- **`KeyBinding` constructor takes `KeyBinding.Category`** (a Record), not a `String` — create with `KeyBinding.Category.create(Identifier.of("mandatory", "mandatory"))`
+- **`KeyBinding` constructor takes `KeyBinding.Category`** (a Record), not a `String` — create with `KeyBinding.Category.create(Identifier.of("noctra", "mandatory"))`
 - **`ClientSendMessageEvents.CHAT` is void** (notify-only) → use `.ALLOW_CHAT` (returns `boolean`: `true` = allow, `false` = cancel) for intercepting/cancelling outgoing chat
 
 - **No `ArmorItem`** — check chest-equippable items via:
@@ -255,7 +255,7 @@ All planned features are tracked in `tasks/TASKS.md`. When the user says **"mach
 1. **Read `tasks/TASKS.md`** — find the next entry with status `[ ] TODO`.
 2. **Read the full spec file** listed on that line (e.g. `tasks/utility/auto_totem.md`).
 3. **Implement the module** exactly as specified: class name, ID, settings, event hooks, mixins, translation keys, icon path.
-4. **Register** the new module in `MandatoryMod.onInitializeClient()`.
+4. **Register** the new module in `Noctra.onInitializeClient()`.
 5. **Mark done** in `tasks/TASKS.md`: change `[ ]` → `[x]` on the task line.
 6. **Mark done** inside the task spec file itself: `Status: [ ] TODO` → `Status: [x] DONE`.
 7. **Build & test** — run `./gradlew compileJava` and verify it compiles with zero errors. If it fails, fix all errors before proceeding.
@@ -279,5 +279,5 @@ Each `tasks/<category>/<module_id>.md` contains:
 
 ### Rules
 - Never implement a task partially — either fully complete it or leave `[ ] TODO`.
-- If a task requires a new Mixin, add the class to `mixin/` AND register it in `mandatory.mixins.json`.
-- Each new module needs a 32×32 PNG icon at `src/main/resources/assets/mandatory/textures/gui/sprites/modules/<id>.png`.
+- If a task requires a new Mixin, add the class to `mixin/` AND register it in `noctra.mixins.json`.
+- Each new module needs a 32×32 PNG icon at `src/main/resources/assets/noctra/textures/gui/sprites/modules/<id>.png`.

@@ -4,12 +4,12 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/fullbright/FullbrightModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.fullbright`
+**Package:** `de.snenjih.noctra.modules.impl.fullbright`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/fullbright/FullbrightModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.fullbright`
+- Package: `de.snenjih.noctra.modules.impl.fullbright`
 - Implementiert HudElement: Nein (kein HUD-Overlay benötigt)
 - Neue Setting-Typen verfügbar: `KeybindSetting`, `ColorSetting`, `TextSetting`
 
@@ -69,13 +69,13 @@ onDisable():
 ## Translation Keys
 
 ```json
-"mandatory.fullbright.name": "Fullbright",
-"mandatory.fullbright.description": "Overrides gamma for maximum visibility in dark areas.",
-"mandatory.fullbright.gamma_value": "Gamma Value"
+"noctra.fullbright.name": "Fullbright",
+"noctra.fullbright.description": "Overrides gamma for maximum visibility in dark areas.",
+"noctra.fullbright.gamma_value": "Gamma Value"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/fullbright.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/fullbright.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Stilisierte Sonne oder glühendes Auge; helles Gelb/Orange auf dunklem Hintergrund. Alternativ: Fackel mit Glüheffekt.

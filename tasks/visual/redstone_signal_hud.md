@@ -4,7 +4,7 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/redstone_signal_hud/RedstoneSignalHudModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.redstone_signal_hud`
+**Package:** `de.snenjih.noctra.modules.impl.redstone_signal_hud`
 
 ## Description
 
@@ -130,26 +130,26 @@ onRenderHud(ctx, tickDelta):
 ## Translation Keys
 
 ```json
-"mandatory.redstone_signal_hud.name": "Redstone Signal",
-"mandatory.redstone_signal_hud.description": "Shows the redstone signal strength of the targeted block.",
-"mandatory.redstone_signal_hud.bg_color": "Background Color",
-"mandatory.redstone_signal_hud.border_color": "Border Color",
-"mandatory.redstone_signal_hud.text_color": "Text Color",
-"mandatory.redstone_signal_hud.text_shadow": "Text Shadow",
-"mandatory.redstone_signal_hud.text_scale": "Text Scale",
-"mandatory.redstone_signal_hud.show_background": "Show Background",
-"mandatory.redstone_signal_hud.only_when_targeting": "Only When Targeting",
-"mandatory.redstone_signal_hud.show_bar": "Show Bar",
-"mandatory.redstone_signal_hud.show_block_name": "Show Block Name",
-"mandatory.redstone_signal_hud.show_all_sides": "Show All Sides",
-"mandatory.redstone_signal_hud.color_zero": "Color Zero",
-"mandatory.redstone_signal_hud.color_low": "Color Low (1-7)",
-"mandatory.redstone_signal_hud.color_high": "Color High (8-15)",
-"mandatory.redstone_signal_hud.always_show_value": "Always Show"
+"noctra.redstone_signal_hud.name": "Redstone Signal",
+"noctra.redstone_signal_hud.description": "Shows the redstone signal strength of the targeted block.",
+"noctra.redstone_signal_hud.bg_color": "Background Color",
+"noctra.redstone_signal_hud.border_color": "Border Color",
+"noctra.redstone_signal_hud.text_color": "Text Color",
+"noctra.redstone_signal_hud.text_shadow": "Text Shadow",
+"noctra.redstone_signal_hud.text_scale": "Text Scale",
+"noctra.redstone_signal_hud.show_background": "Show Background",
+"noctra.redstone_signal_hud.only_when_targeting": "Only When Targeting",
+"noctra.redstone_signal_hud.show_bar": "Show Bar",
+"noctra.redstone_signal_hud.show_block_name": "Show Block Name",
+"noctra.redstone_signal_hud.show_all_sides": "Show All Sides",
+"noctra.redstone_signal_hud.color_zero": "Color Zero",
+"noctra.redstone_signal_hud.color_low": "Color Low (1-7)",
+"noctra.redstone_signal_hud.color_high": "Color High (8-15)",
+"noctra.redstone_signal_hud.always_show_value": "Always Show"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/redstone_signal_hud.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/redstone_signal_hud.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Roter Redstone-Staub-Pixel mit einer Zahl "15" in Orange daneben. Klassisch Redstone-rot.

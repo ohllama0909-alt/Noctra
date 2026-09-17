@@ -4,12 +4,12 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/anti_fog/AntiFogModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.anti_fog`
+**Package:** `de.snenjih.noctra.modules.impl.anti_fog`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/anti_fog/AntiFogModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.anti_fog`
+- Package: `de.snenjih.noctra.modules.impl.anti_fog`
 - Implementiert HudElement: Nein (Mixin-basiert — BackgroundRenderer oder FogShape)
 - Benötigt Mixin auf Fog-Rendering in `BackgroundRenderer`
 
@@ -49,7 +49,7 @@ Keine direkten Lifecycle-Event-Hooks. Logik steckt im Mixin.
 
 ```
 // Im Mixin @Inject(at = @At("RETURN")):
-AntiFogModule module = MandatoryMod.getRegistry().getModule("anti_fog")
+AntiFogModule module = NoctraMod.getRegistry().getModule("anti_fog")
 if (module == null || !module.isEnabled()) return
 
 // Kamera-Medium bestimmen
@@ -96,17 +96,17 @@ else if (hasBlindness && module.getDisableBlindnessFog()):
 ## Translation Keys
 
 ```json
-"mandatory.anti_fog.name": "Anti Fog",
-"mandatory.anti_fog.description": "Reduces or removes world fog to increase render visibility.",
-"mandatory.anti_fog.fog_start": "Fog Start",
-"mandatory.anti_fog.fog_end": "Fog End",
-"mandatory.anti_fog.disable_lava_fog": "Disable Lava Fog",
-"mandatory.anti_fog.disable_water_fog": "Disable Water Fog",
-"mandatory.anti_fog.disable_blindness_fog": "Disable Blindness Fog"
+"noctra.anti_fog.name": "Anti Fog",
+"noctra.anti_fog.description": "Reduces or removes world fog to increase render visibility.",
+"noctra.anti_fog.fog_start": "Fog Start",
+"noctra.anti_fog.fog_end": "Fog End",
+"noctra.anti_fog.disable_lava_fog": "Disable Lava Fog",
+"noctra.anti_fog.disable_water_fog": "Disable Water Fog",
+"noctra.anti_fog.disable_blindness_fog": "Disable Blindness Fog"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/anti_fog.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/anti_fog.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Auge mit klarer Sicht (kein Dunst) oder Landschaft mit durchgestrichenem Nebel. Farbe: Hellblau/Weiß auf dunklem Hintergrund, X oder Durchstreichung in Rot.

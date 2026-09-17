@@ -4,12 +4,12 @@
 **Category:** WORLD  
 **Status:** [x] DONE  
 **Class:** `modules/impl/cave_finder/CaveFinderModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.cave_finder`
+**Package:** `de.snenjih.noctra.modules.impl.cave_finder`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/cave_finder/CaveFinderModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.cave_finder`
+- Package: `de.snenjih.noctra.modules.impl.cave_finder`
 - Implementiert HudElement: Nein (Welt-Rendering via `onRenderWorld`)
 - Verwendet `WorldRenderContext` aus `net.fabricmc.fabric.api.client.rendering.v1.world`
 
@@ -212,19 +212,19 @@ WorldRenderer.drawBox(matrices, consumers.getBuffer(RenderLayer.LINES),
 ## Translation Keys
 
 ```json
-"mandatory.cave_finder.name": "Cave Finder",
-"mandatory.cave_finder.description": "Locates nearby caves and shows their depth and direction on the HUD.",
-"mandatory.cave_finder.scan_interval": "Scan Interval",
-"mandatory.cave_finder.radius": "Search Radius",
-"mandatory.cave_finder.min_cave_size": "Min Cave Size",
-"mandatory.cave_finder.show_3d_marker": "Show 3D Marker",
-"mandatory.cave_finder.hud_x": "HUD X",
-"mandatory.cave_finder.hud_y": "HUD Y",
-"mandatory.cave_finder.search_mode": "Search Mode"
+"noctra.cave_finder.name": "Cave Finder",
+"noctra.cave_finder.description": "Locates nearby caves and shows their depth and direction on the HUD.",
+"noctra.cave_finder.scan_interval": "Scan Interval",
+"noctra.cave_finder.radius": "Search Radius",
+"noctra.cave_finder.min_cave_size": "Min Cave Size",
+"noctra.cave_finder.show_3d_marker": "Show 3D Marker",
+"noctra.cave_finder.hud_x": "HUD X",
+"noctra.cave_finder.hud_y": "HUD Y",
+"noctra.cave_finder.search_mode": "Search Mode"
 ```
 
 ## Icon
 
-**Path:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/cave_finder.png`  
+**Path:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/cave_finder.png`  
 **Size:** 32×32 PNG  
 **Suggestion:** Ein nach unten zeigender Pfeil der in eine stilisierte Höhlen-Silhouette (dunkle Öffnung im Fels) mündet. Alternativ: Eine Draufsicht mit einem Spieler-Symbol oben und einer gestrichelten Linie die nach unten zu einem Höhlen-Symbol führt — symbolisiert Tiefe und Richtung.

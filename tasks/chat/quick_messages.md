@@ -4,12 +4,12 @@
 **Category:** CHAT
 **Status:** [x] DONE
 **Class:** `modules/impl/quick_messages/QuickMessagesModule.java`
-**Package:** `de.snenjih.mandatory.modules.impl.quick_messages`
+**Package:** `de.snenjih.noctra.modules.impl.quick_messages`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/quick_messages/QuickMessagesModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.quick_messages`
+- Package: `de.snenjih.noctra.modules.impl.quick_messages`
 - Implementiert HudElement: Nein
 - `TextSetting` für Nachrichtenvorlagen verwenden
 - `KeybindSetting` für Schnelltasten
@@ -59,7 +59,7 @@ ERROR notification.
 **Helper class:** `config/QuickMessageConfig.java`
 
 ```java
-package de.snenjih.mandatory.config;
+package de.snenjih.noctra.config;
 
 import com.google.gson.*;
 import net.fabricmc.loader.api.FabricLoader;
@@ -138,7 +138,7 @@ private final KeyBinding[] keybinds = new KeyBinding[6]; // index 1..5
 
 public QuickMessagesModule() {
     super("quick_messages", "Quick Messages", "Send pre-defined messages.",
-          ModuleCategory.UTILITY, Identifier.of("mandatory", "modules/quick_messages"));
+          ModuleCategory.UTILITY, Identifier.of("noctra", "modules/quick_messages"));
     addSetting(keybindsActive = new BooleanSetting("keybinds_active", "Enable Keybinds", true));
 }
 
@@ -313,9 +313,9 @@ public void onDisable() {
 ## Translation Keys
 
 ```json
-"mandatory.module.quick_messages.name": "Quick Messages",
-"mandatory.module.quick_messages.description": "Send pre-defined chat messages via keybind or command.",
-"mandatory.quick_messages.setting.keybinds_active": "Enable Keybinds",
+"noctra.module.quick_messages.name": "Quick Messages",
+"noctra.module.quick_messages.description": "Send pre-defined chat messages via keybind or command.",
+"noctra.quick_messages.setting.keybinds_active": "Enable Keybinds",
 "key.mandatory.quick_msg_1": "Quick Message 1",
 "key.mandatory.quick_msg_2": "Quick Message 2",
 "key.mandatory.quick_msg_3": "Quick Message 3",
@@ -327,7 +327,7 @@ public void onDisable() {
 
 ## Icon
 
-**Path:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/quick_messages.png`
+**Path:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/quick_messages.png`
 **Size:** 32x32 PNG
 **Suggestion:** A speech bubble containing the number "1" or a small lightning bolt, conveying
 "instant send". Colour: light blue or white on a dark background.

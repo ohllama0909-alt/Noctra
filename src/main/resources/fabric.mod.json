@@ -2,21 +2,22 @@
   "schemaVersion": 1,
   "id": "${id}",
   "version": "${version}",
-  "name": "Mandatory",
+  "name": "Noctra",
   "description": "Client-side vanilla+ mod — modular features, zero new content.",
   "authors": [
     "Snenjih"
   ],
   "license": "MIT",
+  "icon": "assets/noctra/icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
-      "de.snenjih.mandatory.MandatoryMod"
+      "de.snenjih.noctra.NoctraMod"
     ]
   },
-  "accessWidener": "mandatory.accesswidener",
+  "accessWidener": "noctra.accesswidener",
   "mixins": [
-    "mandatory.mixins.json"
+    "noctra.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader}",

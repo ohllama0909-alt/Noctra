@@ -13,7 +13,7 @@ Zeigt schwebende Schadenszahlen über Entities an, wenn diese Schaden nehmen ode
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/damage_indicator/DamageIndicatorModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.damage_indicator`
+- Package: `de.snenjih.noctra.modules.impl.damage_indicator`
 - Implementiert HudElement: Nein (Welt-Rendering via `onRenderWorld`)
 - Benötigt Mixin auf `LivingEntity.damage()` oder `onDamage`-Event um Schadensevents zu erfassen
 - Verwendet `WorldRenderContext` aus `net.fabricmc.fabric.api.client.rendering.v1.world`
@@ -51,8 +51,8 @@ Zeigt schwebende Schadenszahlen über Entities an, wenn diese Schaden nehmen ode
 ## Translation Keys
 
 ```json
-"mandatory.module.damage_indicator.name": "Damage Indicator",
-"mandatory.module.damage_indicator.description": "Shows floating damage numbers above entities when they take damage."
+"noctra.module.damage_indicator.name": "Damage Indicator",
+"noctra.module.damage_indicator.description": "Shows floating damage numbers above entities when they take damage."
 ```
 
 ## Icon

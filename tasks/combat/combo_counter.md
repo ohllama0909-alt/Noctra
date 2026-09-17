@@ -4,7 +4,7 @@
 **Category:** COMBAT  
 **Status:** [x] DONE  
 **Class:** `modules/impl/combo_counter/ComboCounterModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.combo_counter`
+**Package:** `de.snenjih.noctra.modules.impl.combo_counter`
 
 ## Description
 
@@ -146,29 +146,29 @@ onRenderHud(ctx, tickDelta):
 ## Translation Keys
 
 ```json
-"mandatory.combo_counter.name": "Combo Counter",
-"mandatory.combo_counter.description": "Counts consecutive hits without taking damage.",
-"mandatory.combo_counter.bg_color": "Background Color",
-"mandatory.combo_counter.border_color": "Border Color",
-"mandatory.combo_counter.text_color": "Text Color",
-"mandatory.combo_counter.text_shadow": "Text Shadow",
-"mandatory.combo_counter.text_scale": "Text Scale",
-"mandatory.combo_counter.show_background": "Show Background",
-"mandatory.combo_counter.reset_on_damage": "Reset on Damage",
-"mandatory.combo_counter.reset_timeout": "Reset Timeout (s)",
-"mandatory.combo_counter.show_max_combo": "Show Max Combo",
-"mandatory.combo_counter.show_only_when_active": "Show Only When Active",
-"mandatory.combo_counter.min_display_combo": "Min Display Combo",
-"mandatory.combo_counter.combo_colors": "Combo Colors",
-"mandatory.combo_counter.color_low": "Color (1-4)",
-"mandatory.combo_counter.color_mid": "Color (5-9)",
-"mandatory.combo_counter.color_high": "Color (10-19)",
-"mandatory.combo_counter.color_max": "Color (20+)",
-"mandatory.combo_counter.play_sound_at": "Sound at Combo"
+"noctra.combo_counter.name": "Combo Counter",
+"noctra.combo_counter.description": "Counts consecutive hits without taking damage.",
+"noctra.combo_counter.bg_color": "Background Color",
+"noctra.combo_counter.border_color": "Border Color",
+"noctra.combo_counter.text_color": "Text Color",
+"noctra.combo_counter.text_shadow": "Text Shadow",
+"noctra.combo_counter.text_scale": "Text Scale",
+"noctra.combo_counter.show_background": "Show Background",
+"noctra.combo_counter.reset_on_damage": "Reset on Damage",
+"noctra.combo_counter.reset_timeout": "Reset Timeout (s)",
+"noctra.combo_counter.show_max_combo": "Show Max Combo",
+"noctra.combo_counter.show_only_when_active": "Show Only When Active",
+"noctra.combo_counter.min_display_combo": "Min Display Combo",
+"noctra.combo_counter.combo_colors": "Combo Colors",
+"noctra.combo_counter.color_low": "Color (1-4)",
+"noctra.combo_counter.color_mid": "Color (5-9)",
+"noctra.combo_counter.color_high": "Color (10-19)",
+"noctra.combo_counter.color_max": "Color (20+)",
+"noctra.combo_counter.play_sound_at": "Sound at Combo"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/combo_counter.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/combo_counter.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Rotes "×3" oder "x10" in Flammen-Pixel-Art. Combo-typischer Kampf-Stil.

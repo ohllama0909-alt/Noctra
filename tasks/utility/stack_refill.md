@@ -87,7 +87,7 @@ refill(client, player, targetItem):
   //    Nothing more needed.
 
   if showNotification.get():
-    player.sendMessage(Text.translatable("mandatory.stack_refill.refilled",
+    player.sendMessage(Text.translatable("noctra.stack_refill.refilled",
         Text.translatable(targetItem.getTranslationKey())), true)
 
 findInMainInventory(player, targetItem):
@@ -132,16 +132,16 @@ private void updateSnapshot(ClientPlayerEntity player)
 ## Translation Keys
 
 ```json
-"mandatory.stack_refill.name": "Stack Refill",
-"mandatory.stack_refill.description": "Automatically refills your held stack from inventory when it runs out.",
-"mandatory.stack_refill.refill_blocks": "Refill Blocks",
-"mandatory.stack_refill.refill_tools": "Refill Tools",
-"mandatory.stack_refill.show_notification": "Show Notification",
-"mandatory.stack_refill.refilled": "Refilled: %s"
+"noctra.stack_refill.name": "Stack Refill",
+"noctra.stack_refill.description": "Automatically refills your held stack from inventory when it runs out.",
+"noctra.stack_refill.refill_blocks": "Refill Blocks",
+"noctra.stack_refill.refill_tools": "Refill Tools",
+"noctra.stack_refill.show_notification": "Show Notification",
+"noctra.stack_refill.refilled": "Refilled: %s"
 ```
 
 ## Icon
 
-**Path:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/stack_refill.png`  
+**Path:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/stack_refill.png`  
 **Size:** 32×32 PNG  
 **Suggestion:** Two overlapping item boxes (like a stack of items icon) with a small downward arrow between them indicating "pull from below." Use a warm amber/yellow color scheme to evoke inventory items.

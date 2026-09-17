@@ -4,14 +4,14 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/biome_display/BiomeDisplayModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.biome_display`
+**Package:** `de.snenjih.noctra.modules.impl.biome_display`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/biome_display/BiomeDisplayModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.biome_display`
+- Package: `de.snenjih.noctra.modules.impl.biome_display`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 
 ## Description
 
@@ -94,18 +94,18 @@ onRenderHud(DrawContext ctx, float tickDelta):
 ## Translation Keys
 
 ```json
-"mandatory.biome_display.name": "Biome Display",
-"mandatory.biome_display.description": "Shows the name of your current biome on screen.",
-"mandatory.biome_display.x_pos": "X Position",
-"mandatory.biome_display.y_pos": "Y Position",
-"mandatory.biome_display.text_color": "Text Color",
-"mandatory.biome_display.show_label": "Show Label",
-"mandatory.biome_display.background": "Background",
-"mandatory.biome_display.update_interval": "Update Interval (ticks)"
+"noctra.biome_display.name": "Biome Display",
+"noctra.biome_display.description": "Shows the name of your current biome on screen.",
+"noctra.biome_display.x_pos": "X Position",
+"noctra.biome_display.y_pos": "Y Position",
+"noctra.biome_display.text_color": "Text Color",
+"noctra.biome_display.show_label": "Show Label",
+"noctra.biome_display.background": "Background",
+"noctra.biome_display.update_interval": "Update Interval (ticks)"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/biome_display.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/biome_display.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Miniatur-Landschaft: grüner Hügel, Baum und Sonne im Pixel-Art-Stil. Alternativ ein stilisiertes Blatt oder Grasblock.

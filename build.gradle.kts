@@ -12,7 +12,7 @@ group = "de.Snenjih"
 version = modVersion
 
 base {
-    archivesName.set("mandatory")
+    archivesName.set("noctra")
 }
 
 java {
@@ -37,17 +37,17 @@ dependencies {
 }
 
 loom {
-    accessWidenerPath.set(rootProject.file("src/main/resources/mandatory.accesswidener"))
+    accessWidenerPath.set(rootProject.file("src/main/resources/noctra.accesswidener"))
     @Suppress("UnstableApiUsage")
     mixin {
         useLegacyMixinAp = true
-        defaultRefmapName.set("mandatory.refmap.json")
+        defaultRefmapName.set("noctra.refmap.json")
     }
 }
 
 tasks.processResources {
     val props = mapOf(
-        "id"        to "mandatory",
+        "id"        to "noctra",
         "version"   to modVersion,
         "minecraft" to mcVersion,
         "loader"    to loaderVersion
@@ -67,7 +67,7 @@ tasks.jar {
     from("LICENSE")
     manifest {
         attributes(
-            "Implementation-Title"   to "mandatory",
+            "Implementation-Title"   to "noctra",
             "Implementation-Version" to modVersion
         )
     }

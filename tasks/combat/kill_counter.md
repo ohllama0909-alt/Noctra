@@ -4,14 +4,14 @@
 **Category:** COMBAT  
 **Status:** [x] DONE  
 **Class:** `modules/impl/kill_counter/KillCounterModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.kill_counter`
+**Package:** `de.snenjih.noctra.modules.impl.kill_counter`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/kill_counter/KillCounterModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.kill_counter`
+- Package: `de.snenjih.noctra.modules.impl.kill_counter`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 
 ## Description
 
@@ -183,18 +183,18 @@ Empfehlung für Erstimplementierung: Einfacheres Set ohne HP-Tracking verwenden;
 ## Translation Keys
 
 ```json
-"mandatory.kill_counter.name": "Kill Counter",
-"mandatory.kill_counter.description": "Counts your kills this session and displays them on the HUD.",
-"mandatory.kill_counter.x_pos": "X Position",
-"mandatory.kill_counter.y_pos": "Y Position",
-"mandatory.kill_counter.show_session_time": "Show Session Time",
-"mandatory.kill_counter.reset_on_death": "Reset on Death",
-"mandatory.kill_counter.background": "Background",
-"mandatory.kill_counter.text_color": "Text Color"
+"noctra.kill_counter.name": "Kill Counter",
+"noctra.kill_counter.description": "Counts your kills this session and displays them on the HUD.",
+"noctra.kill_counter.x_pos": "X Position",
+"noctra.kill_counter.y_pos": "Y Position",
+"noctra.kill_counter.show_session_time": "Show Session Time",
+"noctra.kill_counter.reset_on_death": "Reset on Death",
+"noctra.kill_counter.background": "Background",
+"noctra.kill_counter.text_color": "Text Color"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/kill_counter.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/kill_counter.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Ein Schwert-Symbol mit einer kleinen Zahl "0" oder "III" in der Ecke, ähnlich wie ein Tally-Mark-Muster. Blutroter Akzent oder Totenkopf-Silhouette im Hintergrund.

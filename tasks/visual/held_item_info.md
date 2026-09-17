@@ -13,9 +13,9 @@ Zeigt detaillierte Informationen über das aktuell gehaltene Item als kompaktes 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/held_item_info/HeldItemInfoModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.held_item_info`
+- Package: `de.snenjih.noctra.modules.impl.held_item_info`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 - `ColorSetting` für Textfarbe verwenden
 
 ## Settings
@@ -50,8 +50,8 @@ Zeigt detaillierte Informationen über das aktuell gehaltene Item als kompaktes 
 ## Translation Keys
 
 ```json
-"mandatory.module.held_item_info.name": "Held Item Info",
-"mandatory.module.held_item_info.description": "Shows attack damage, stack size and food value of your held item."
+"noctra.module.held_item_info.name": "Held Item Info",
+"noctra.module.held_item_info.description": "Shows attack damage, stack size and food value of your held item."
 ```
 
 ## Icon

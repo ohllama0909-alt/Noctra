@@ -4,14 +4,14 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/saturation_bar/SaturationBarModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.saturation_bar`
+**Package:** `de.snenjih.noctra.modules.impl.saturation_bar`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/saturation_bar/SaturationBarModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.saturation_bar`
+- Package: `de.snenjih.noctra.modules.impl.saturation_bar`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 
 ## Description
 
@@ -102,20 +102,20 @@ onRenderHud(DrawContext ctx, float tickDelta):
 ## Translation Keys
 
 ```json
-"mandatory.saturation_bar.name": "Saturation Bar",
-"mandatory.saturation_bar.description": "Makes the hidden food saturation value visible as a bar.",
-"mandatory.saturation_bar.x_pos": "X Position",
-"mandatory.saturation_bar.y_pos": "Y Position",
-"mandatory.saturation_bar.anchor_to_hunger": "Anchor to Hunger Bar",
-"mandatory.saturation_bar.bar_width": "Bar Width",
-"mandatory.saturation_bar.bar_height": "Bar Height",
-"mandatory.saturation_bar.color_sat": "Saturation Color",
-"mandatory.saturation_bar.show_label": "Show Label",
-"mandatory.saturation_bar.background": "Background"
+"noctra.saturation_bar.name": "Saturation Bar",
+"noctra.saturation_bar.description": "Makes the hidden food saturation value visible as a bar.",
+"noctra.saturation_bar.x_pos": "X Position",
+"noctra.saturation_bar.y_pos": "Y Position",
+"noctra.saturation_bar.anchor_to_hunger": "Anchor to Hunger Bar",
+"noctra.saturation_bar.bar_width": "Bar Width",
+"noctra.saturation_bar.bar_height": "Bar Height",
+"noctra.saturation_bar.color_sat": "Saturation Color",
+"noctra.saturation_bar.show_label": "Show Label",
+"noctra.saturation_bar.background": "Background"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/saturation_bar.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/saturation_bar.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Vanilla-Hunger-Drumstick-Icon mit einem goldenen Glitzern oder einem gelben Balken darunter. Goldene/Gelbe Farbtöne zur Unterscheidung von der roten Hunger-Leiste.

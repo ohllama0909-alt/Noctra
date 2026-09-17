@@ -4,12 +4,12 @@
 **Category:** COMBAT  
 **Status:** [x] DONE  
 **Class:** `modules/impl/hit_indicator/HitIndicatorModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.hit_indicator`
+**Package:** `de.snenjih.noctra.modules.impl.hit_indicator`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/hit_indicator/HitIndicatorModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.hit_indicator`
+- Package: `de.snenjih.noctra.modules.impl.hit_indicator`
 - Implementiert HudElement: Ja — rendert Treffer-Overlay auf dem HUD
 - `ColorSetting` für Indikatorfarbe verwenden
 
@@ -132,18 +132,18 @@ Der Client kennt den tatsächlichen Schaden nicht direkt (Damage Calculation lä
 ## Translation Keys
 
 ```json
-"mandatory.hit_indicator.name": "Hit Indicator",
-"mandatory.hit_indicator.description": "Shows a visual flash and text when you land a hit on an entity.",
-"mandatory.hit_indicator.flash_enabled": "Screen Flash",
-"mandatory.hit_indicator.flash_color": "Flash Color",
-"mandatory.hit_indicator.flash_duration": "Flash Duration",
-"mandatory.hit_indicator.show_text": "Show Hit Text",
-"mandatory.hit_indicator.show_damage": "Show Damage",
-"mandatory.hit_indicator.text_color": "Text Color"
+"noctra.hit_indicator.name": "Hit Indicator",
+"noctra.hit_indicator.description": "Shows a visual flash and text when you land a hit on an entity.",
+"noctra.hit_indicator.flash_enabled": "Screen Flash",
+"noctra.hit_indicator.flash_color": "Flash Color",
+"noctra.hit_indicator.flash_duration": "Flash Duration",
+"noctra.hit_indicator.show_text": "Show Hit Text",
+"noctra.hit_indicator.show_damage": "Show Damage",
+"noctra.hit_indicator.text_color": "Text Color"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/hit_indicator.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/hit_indicator.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Ein rotes Ausrufezeichen oder stilisierter Einschlag-Effekt (konzentrische Wellen in Rot/Orange) auf dunklem Hintergrund. Alternativ: ein Schwert-Silhouette, das einen roten Funken beim Aufprall zeigt.

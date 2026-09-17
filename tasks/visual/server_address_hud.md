@@ -4,7 +4,7 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/server_address_hud/ServerAddressHudModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.server_address_hud`
+**Package:** `de.snenjih.noctra.modules.impl.server_address_hud`
 
 ## Description
 
@@ -138,26 +138,26 @@ onRenderHud(ctx, tickDelta):
 ## Translation Keys
 
 ```json
-"mandatory.server_address_hud.name": "Server Address",
-"mandatory.server_address_hud.description": "Displays the current server address or name on the HUD.",
-"mandatory.server_address_hud.bg_color": "Background Color",
-"mandatory.server_address_hud.border_color": "Border Color",
-"mandatory.server_address_hud.text_color": "Text Color",
-"mandatory.server_address_hud.text_shadow": "Text Shadow",
-"mandatory.server_address_hud.text_scale": "Text Scale",
-"mandatory.server_address_hud.show_background": "Show Background",
-"mandatory.server_address_hud.show_ip": "Show IP",
-"mandatory.server_address_hud.custom_alias": "Custom Alias",
-"mandatory.server_address_hud.hide_port": "Hide Port",
-"mandatory.server_address_hud.only_on_multiplayer": "Only Multiplayer",
-"mandatory.server_address_hud.show_on_singleplayer": "Show in Singleplayer",
-"mandatory.server_address_hud.truncate_length": "Max Length",
-"mandatory.server_address_hud.show_ping": "Show Ping",
-"mandatory.server_address_hud.prefix": "Prefix"
+"noctra.server_address_hud.name": "Server Address",
+"noctra.server_address_hud.description": "Displays the current server address or name on the HUD.",
+"noctra.server_address_hud.bg_color": "Background Color",
+"noctra.server_address_hud.border_color": "Border Color",
+"noctra.server_address_hud.text_color": "Text Color",
+"noctra.server_address_hud.text_shadow": "Text Shadow",
+"noctra.server_address_hud.text_scale": "Text Scale",
+"noctra.server_address_hud.show_background": "Show Background",
+"noctra.server_address_hud.show_ip": "Show IP",
+"noctra.server_address_hud.custom_alias": "Custom Alias",
+"noctra.server_address_hud.hide_port": "Hide Port",
+"noctra.server_address_hud.only_on_multiplayer": "Only Multiplayer",
+"noctra.server_address_hud.show_on_singleplayer": "Show in Singleplayer",
+"noctra.server_address_hud.truncate_length": "Max Length",
+"noctra.server_address_hud.show_ping": "Show Ping",
+"noctra.server_address_hud.prefix": "Prefix"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/server_address_hud.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/server_address_hud.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** WLAN/Server-Symbol (drei gebogene Balken) über einem kleinen Haus-Pixel. Blaugrau Farbton.

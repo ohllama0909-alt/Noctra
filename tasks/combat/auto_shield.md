@@ -4,12 +4,12 @@
 **Category:** COMBAT  
 **Status:** [x] DONE  
 **Class:** `modules/impl/auto_shield/AutoShieldModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.auto_shield`
+**Package:** `de.snenjih.noctra.modules.impl.auto_shield`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/auto_shield/AutoShieldModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.auto_shield`
+- Package: `de.snenjih.noctra.modules.impl.auto_shield`
 - Implementiert HudElement: Nein (reagiert auf Schadensereignisse)
 - Verwendet `onClientTick` und ggf. Mixin auf Schadens-Events
 
@@ -166,16 +166,16 @@ Der Server lehnt die Anfrage ab, wenn:
 ## Translation Keys
 
 ```json
-"mandatory.auto_shield.name": "Auto Shield",
-"mandatory.auto_shield.description": "Automatically raises your shield when attacked or an arrow approaches.",
-"mandatory.auto_shield.react_to_arrows": "React to Arrows",
-"mandatory.auto_shield.react_to_melee": "React to Melee",
-"mandatory.auto_shield.hold_duration": "Hold Duration",
-"mandatory.auto_shield.arrow_detection_radius": "Arrow Radius"
+"noctra.auto_shield.name": "Auto Shield",
+"noctra.auto_shield.description": "Automatically raises your shield when attacked or an arrow approaches.",
+"noctra.auto_shield.react_to_arrows": "React to Arrows",
+"noctra.auto_shield.react_to_melee": "React to Melee",
+"noctra.auto_shield.hold_duration": "Hold Duration",
+"noctra.auto_shield.arrow_detection_radius": "Arrow Radius"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/auto_shield.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/auto_shield.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Das vanilla Schild-Item aus der Vorderansicht, mit einem kleinen Blitz- oder Pfeil-Symbol in der Ecke, das "automatische Reaktion" symbolisiert. Blaue oder silberne Farbgebung.

@@ -4,7 +4,7 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/xp_level_hud/XpLevelHudModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.xp_level_hud`
+**Package:** `de.snenjih.noctra.modules.impl.xp_level_hud`
 
 ## Description
 
@@ -108,25 +108,25 @@ onRenderHud(ctx, tickDelta):
 ## Translation Keys
 
 ```json
-"mandatory.xp_level_hud.name": "XP & Level",
-"mandatory.xp_level_hud.description": "Shows your experience level and XP progress in detail.",
-"mandatory.xp_level_hud.bg_color": "Background Color",
-"mandatory.xp_level_hud.border_color": "Border Color",
-"mandatory.xp_level_hud.text_color": "Text Color",
-"mandatory.xp_level_hud.text_shadow": "Text Shadow",
-"mandatory.xp_level_hud.text_scale": "Text Scale",
-"mandatory.xp_level_hud.show_background": "Show Background",
-"mandatory.xp_level_hud.show_bar": "Show Bar",
-"mandatory.xp_level_hud.show_raw_xp": "Show Raw XP",
-"mandatory.xp_level_hud.show_xp_to_next": "Show XP to Next",
-"mandatory.xp_level_hud.target_level": "Target Level",
-"mandatory.xp_level_hud.show_target_xp": "Show Target XP",
-"mandatory.xp_level_hud.compact_mode": "Compact Mode",
-"mandatory.xp_level_hud.xp_bar_color": "XP Bar Color"
+"noctra.xp_level_hud.name": "XP & Level",
+"noctra.xp_level_hud.description": "Shows your experience level and XP progress in detail.",
+"noctra.xp_level_hud.bg_color": "Background Color",
+"noctra.xp_level_hud.border_color": "Border Color",
+"noctra.xp_level_hud.text_color": "Text Color",
+"noctra.xp_level_hud.text_shadow": "Text Shadow",
+"noctra.xp_level_hud.text_scale": "Text Scale",
+"noctra.xp_level_hud.show_background": "Show Background",
+"noctra.xp_level_hud.show_bar": "Show Bar",
+"noctra.xp_level_hud.show_raw_xp": "Show Raw XP",
+"noctra.xp_level_hud.show_xp_to_next": "Show XP to Next",
+"noctra.xp_level_hud.target_level": "Target Level",
+"noctra.xp_level_hud.show_target_xp": "Show Target XP",
+"noctra.xp_level_hud.compact_mode": "Compact Mode",
+"noctra.xp_level_hud.xp_bar_color": "XP Bar Color"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/xp_level_hud.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/xp_level_hud.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Grüner XP-Orb (Pixel-Art) mit einer Zahl daneben oder einem Balken darunter. Hellgrüne Akzentfarbe.

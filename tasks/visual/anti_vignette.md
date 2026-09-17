@@ -4,12 +4,12 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/anti_vignette/AntiVignetteModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.anti_vignette`
+**Package:** `de.snenjih.noctra.modules.impl.anti_vignette`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/anti_vignette/AntiVignetteModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.anti_vignette`
+- Package: `de.snenjih.noctra.modules.impl.anti_vignette`
 - Implementiert HudElement: Nein (Mixin auf `InGameHud.renderVignette` oder `renderOverlays`)
 - Benötigt Mixin auf Vignette-Rendering in `InGameHud`
 
@@ -61,21 +61,21 @@ Keine direkten Lifecycle-Event-Hooks. Logik steckt im Mixin.
 // AntiVignetteMixin:
 @Inject(at = @At("HEAD"), method = "renderVignetteOverlay(...)", cancellable = true)
 private void onRenderVignette(..., CallbackInfo ci):
-    AntiVignetteModule module = MandatoryMod.getRegistry().getModule("anti_vignette")
+    AntiVignetteModule module = NoctraMod.getRegistry().getModule("anti_vignette")
     if (module != null && module.isEnabled()):
         ci.cancel()
 
 // AntiVignetteUnderwaterMixin:
 @Inject(at = @At("HEAD"), method = "renderUnderwaterOverlay(Lnet/minecraft/client/gui/DrawContext;)V", cancellable = true)
 private void onRenderUnderwater(DrawContext context, CallbackInfo ci):
-    AntiVignetteModule module = MandatoryMod.getRegistry().getModule("anti_vignette")
+    AntiVignetteModule module = NoctraMod.getRegistry().getModule("anti_vignette")
     if (module != null && module.isEnabled() && module.isDisableUnderwater()):
         ci.cancel()
 
 // AntiVignettePumpkinMixin:
 @Inject(at = @At("HEAD"), method = "renderOverlayTexture(...)", cancellable = true)
 private void onRenderOverlay(DrawContext context, Identifier texture, float alpha, CallbackInfo ci):
-    AntiVignetteModule module = MandatoryMod.getRegistry().getModule("anti_vignette")
+    AntiVignetteModule module = NoctraMod.getRegistry().getModule("anti_vignette")
     if (module != null && module.isEnabled() && module.isDisablePumpkin()):
         // Pumpkin-Blur Identifier: "minecraft:textures/misc/pumpkinblur.png"
         if (texture.toString().contains("pumpkin") || texture.toString().contains("pumpkinblur")):
@@ -95,14 +95,14 @@ private void onRenderOverlay(DrawContext context, Identifier texture, float alph
 ## Translation Keys
 
 ```json
-"mandatory.anti_vignette.name": "Anti Vignette",
-"mandatory.anti_vignette.description": "Disables the screen edge vignette and optional overlays.",
-"mandatory.anti_vignette.disable_underwater": "Disable Underwater Overlay",
-"mandatory.anti_vignette.disable_pumpkin": "Disable Pumpkin Overlay"
+"noctra.anti_vignette.name": "Anti Vignette",
+"noctra.anti_vignette.description": "Disables the screen edge vignette and optional overlays.",
+"noctra.anti_vignette.disable_underwater": "Disable Underwater Overlay",
+"noctra.anti_vignette.disable_pumpkin": "Disable Pumpkin Overlay"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/anti_vignette.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/anti_vignette.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Quadrat mit klarem Innenbereich und durchgestrichenen dunklen Rändern. Farbe: Weißes Zentrum, rote Durchstreichungs-X auf dunklem Rand.

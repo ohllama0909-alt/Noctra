@@ -4,12 +4,12 @@
 **Category:** ELYTRA  
 **Status:** [x] DONE  
 **Class:** `modules/impl/pitch_lock/PitchLockModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.pitch_lock`
+**Package:** `de.snenjih.noctra.modules.impl.pitch_lock`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/pitch_lock/PitchLockModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.pitch_lock`
+- Package: `de.snenjih.noctra.modules.impl.pitch_lock`
 - Implementiert HudElement: Nein
 - `KeybindSetting` für den Lock-Toggle-Keybind verwenden statt manuellem `KeyBinding`
 
@@ -71,7 +71,7 @@ Positions-Paket.
    i. player.setPitch(newPitch)
 
 3. Kein onEnable/onDisable Fabric-Event-Setup nötig — onClientTick läuft über die
-   zentrale Schleife in MandatoryMod, solange das Modul enabled ist.
+   zentrale Schleife in NoctraMod, solange das Modul enabled ist.
 ```
 
 ### Keybind-Details
@@ -104,17 +104,17 @@ Positions-Paket.
 ## Translation Keys
 
 ```json
-"mandatory.pitch_lock.name": "Pitch Lock",
-"mandatory.pitch_lock.description": "Locks your view angle while gliding for consistent travel speed.",
-"mandatory.pitch_lock.target_pitch": "Target Pitch (°)",
-"mandatory.pitch_lock.lock_strength": "Lock Strength",
-"mandatory.pitch_lock.only_while_gliding": "Only While Gliding",
+"noctra.pitch_lock.name": "Pitch Lock",
+"noctra.pitch_lock.description": "Locks your view angle while gliding for consistent travel speed.",
+"noctra.pitch_lock.target_pitch": "Target Pitch (°)",
+"noctra.pitch_lock.lock_strength": "Lock Strength",
+"noctra.pitch_lock.only_while_gliding": "Only While Gliding",
 "key.mandatory.pitch_lock_toggle": "Toggle Pitch Lock"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/pitch_lock.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/pitch_lock.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Pfeil oder Kompass der nach unten geneigt ist (etwa 30°), alternativ ein
 Schloss-Symbol mit Pfeil. Stilistisch passend zu den anderen Icons im Stil des Mods (Pixel-Art,

@@ -4,7 +4,7 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/coordinates_hud/CoordinatesHudModule.java` (integriert als `showDirection` Setting)  
-**Package:** `de.snenjih.mandatory.modules.impl.coordinates_hud`
+**Package:** `de.snenjih.noctra.modules.impl.coordinates_hud`
 
 ## System Notes (Updated)
 
@@ -127,22 +127,22 @@ Methode drawCompassBar(DrawContext ctx, int x, int y, int width, float yaw):
 ## Translation Keys
 
 ```json
-"mandatory.direction_hud.name": "Direction HUD",
-"mandatory.direction_hud.description": "Displays your facing direction and a compass strip on screen.",
-"mandatory.direction_hud.x_pos": "X Position",
-"mandatory.direction_hud.y_pos": "Y Position",
-"mandatory.direction_hud.show_cardinal": "Show Cardinal",
-"mandatory.direction_hud.show_degrees": "Show Degrees",
-"mandatory.direction_hud.show_pitch": "Show Pitch",
-"mandatory.direction_hud.show_compass_bar": "Show Compass Bar",
-"mandatory.direction_hud.compass_width": "Compass Width",
-"mandatory.direction_hud.text_color": "Text Color",
-"mandatory.direction_hud.highlight_color": "Highlight Color",
-"mandatory.direction_hud.background": "Background"
+"noctra.direction_hud.name": "Direction HUD",
+"noctra.direction_hud.description": "Displays your facing direction and a compass strip on screen.",
+"noctra.direction_hud.x_pos": "X Position",
+"noctra.direction_hud.y_pos": "Y Position",
+"noctra.direction_hud.show_cardinal": "Show Cardinal",
+"noctra.direction_hud.show_degrees": "Show Degrees",
+"noctra.direction_hud.show_pitch": "Show Pitch",
+"noctra.direction_hud.show_compass_bar": "Show Compass Bar",
+"noctra.direction_hud.compass_width": "Compass Width",
+"noctra.direction_hud.text_color": "Text Color",
+"noctra.direction_hud.highlight_color": "Highlight Color",
+"noctra.direction_hud.background": "Background"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/direction_hud.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/direction_hud.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Kompassscheibe mit roter Nord-Nadel; "N" oben hervorgehoben. Pixel-Art-Stil, kreisförmig.

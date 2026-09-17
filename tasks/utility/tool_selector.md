@@ -164,15 +164,15 @@ private void maybeRestore(MinecraftClient client, ClientPlayerEntity player)
 ## Translation Keys
 
 ```json
-"mandatory.tool_selector.name": "Tool Selector",
-"mandatory.tool_selector.description": "Automatically switches to the best tool in your hotbar for the targeted block.",
-"mandatory.tool_selector.auto_restore": "Restore Slot",
-"mandatory.tool_selector.require_hold": "Only While Mining",
-"mandatory.tool_selector.min_speed_gain": "Min Speed Gain"
+"noctra.tool_selector.name": "Tool Selector",
+"noctra.tool_selector.description": "Automatically switches to the best tool in your hotbar for the targeted block.",
+"noctra.tool_selector.auto_restore": "Restore Slot",
+"noctra.tool_selector.require_hold": "Only While Mining",
+"noctra.tool_selector.min_speed_gain": "Min Speed Gain"
 ```
 
 ## Icon
 
-**Path:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/tool_selector.png`  
+**Path:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/tool_selector.png`  
 **Size:** 32×32 PNG  
 **Suggestion:** A pickaxe and an axe crossed diagonally with a small cursor/crosshair overlay on the block they're pointing at. Steel-gray and wooden tones. Evokes "right tool, right block."

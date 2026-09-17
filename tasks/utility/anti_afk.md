@@ -135,20 +135,20 @@ private void performAction(MinecraftClient client, ClientPlayerEntity player)
 ## Translation Keys
 
 ```json
-"mandatory.anti_afk.name": "Anti AFK",
-"mandatory.anti_afk.description": "Performs small actions at regular intervals to prevent AFK kicks.",
-"mandatory.anti_afk.interval": "Interval (s)",
-"mandatory.anti_afk.action": "Action",
-"mandatory.anti_afk.random_offset": "Random Offset",
-"mandatory.anti_afk.show_indicator": "Show Indicator",
-"mandatory.anti_afk.action.rotate": "Rotate",
-"mandatory.anti_afk.action.jump": "Jump",
-"mandatory.anti_afk.action.sneak": "Sneak",
-"mandatory.anti_afk.action.swing": "Swing"
+"noctra.anti_afk.name": "Anti AFK",
+"noctra.anti_afk.description": "Performs small actions at regular intervals to prevent AFK kicks.",
+"noctra.anti_afk.interval": "Interval (s)",
+"noctra.anti_afk.action": "Action",
+"noctra.anti_afk.random_offset": "Random Offset",
+"noctra.anti_afk.show_indicator": "Show Indicator",
+"noctra.anti_afk.action.rotate": "Rotate",
+"noctra.anti_afk.action.jump": "Jump",
+"noctra.anti_afk.action.sneak": "Sneak",
+"noctra.anti_afk.action.swing": "Swing"
 ```
 
 ## Icon
 
-**Path:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/anti_afk.png`  
+**Path:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/anti_afk.png`  
 **Size:** 32×32 PNG  
 **Suggestion:** A simple clock face with a player silhouette or a walking figure inside it. Use a muted blue/gray palette. The clock emphasizes "timed interval"; the figure emphasizes "staying active." Alternatively: an hourglass with legs.

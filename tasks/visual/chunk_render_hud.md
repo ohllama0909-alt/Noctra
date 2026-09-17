@@ -4,7 +4,7 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/chunk_render_hud/ChunkRenderHudModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.chunk_render_hud`
+**Package:** `de.snenjih.noctra.modules.impl.chunk_render_hud`
 
 ## Description
 
@@ -115,7 +115,7 @@ public interface WorldRendererAccessor {
 }
 ```
 
-**Registrierung in mandatory.mixins.json** unter `"client"`.
+**Registrierung in noctra.mixins.json** unter `"client"`.
 
 **Fallback-Strategie ohne Mixin:** `mc.worldRenderer.getDebugString()` gibt einen String wie `"C[256] s[0] , D: 12, pC: 0"` zurück. Daraus lassen sich Chunk-Zahlen via Regex extrahieren. Für Entities: `mc.world.getEntities()` zählen (weniger präzise als "rendered"-Count).
 
@@ -129,26 +129,26 @@ public interface WorldRendererAccessor {
 ## Translation Keys
 
 ```json
-"mandatory.chunk_render_hud.name": "Chunk Render Stats",
-"mandatory.chunk_render_hud.description": "Shows chunk and entity render stats on the HUD.",
-"mandatory.chunk_render_hud.bg_color": "Background Color",
-"mandatory.chunk_render_hud.border_color": "Border Color",
-"mandatory.chunk_render_hud.text_color": "Text Color",
-"mandatory.chunk_render_hud.text_shadow": "Text Shadow",
-"mandatory.chunk_render_hud.text_scale": "Text Scale",
-"mandatory.chunk_render_hud.show_background": "Show Background",
-"mandatory.chunk_render_hud.show_chunks": "Show Chunks",
-"mandatory.chunk_render_hud.show_entities": "Show Entities",
-"mandatory.chunk_render_hud.show_block_entities": "Show Block Entities",
-"mandatory.chunk_render_hud.show_particles": "Show Particles",
-"mandatory.chunk_render_hud.show_pending_chunks": "Show Pending Chunks",
-"mandatory.chunk_render_hud.compact_mode": "Compact Mode",
-"mandatory.chunk_render_hud.color_warn_entities": "Entity Warn Count",
-"mandatory.chunk_render_hud.color_entity_warn": "Entity Warn Color"
+"noctra.chunk_render_hud.name": "Chunk Render Stats",
+"noctra.chunk_render_hud.description": "Shows chunk and entity render stats on the HUD.",
+"noctra.chunk_render_hud.bg_color": "Background Color",
+"noctra.chunk_render_hud.border_color": "Border Color",
+"noctra.chunk_render_hud.text_color": "Text Color",
+"noctra.chunk_render_hud.text_shadow": "Text Shadow",
+"noctra.chunk_render_hud.text_scale": "Text Scale",
+"noctra.chunk_render_hud.show_background": "Show Background",
+"noctra.chunk_render_hud.show_chunks": "Show Chunks",
+"noctra.chunk_render_hud.show_entities": "Show Entities",
+"noctra.chunk_render_hud.show_block_entities": "Show Block Entities",
+"noctra.chunk_render_hud.show_particles": "Show Particles",
+"noctra.chunk_render_hud.show_pending_chunks": "Show Pending Chunks",
+"noctra.chunk_render_hud.compact_mode": "Compact Mode",
+"noctra.chunk_render_hud.color_warn_entities": "Entity Warn Count",
+"noctra.chunk_render_hud.color_entity_warn": "Entity Warn Color"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/chunk_render_hud.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/chunk_render_hud.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Isometrische Chunk-Würfel mit einem kleinen Balkendiagramm-Symbol. Technisch/analytisch wirkende Pixel-Art.

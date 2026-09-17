@@ -4,7 +4,7 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/speedometer/SpeedometerModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.speedometer`
+**Package:** `de.snenjih.noctra.modules.impl.speedometer`
 
 ## Description
 
@@ -142,30 +142,30 @@ onLeaveWorld():
 ## Translation Keys
 
 ```json
-"mandatory.speedometer.name": "Speedometer",
-"mandatory.speedometer.description": "Shows your current movement speed in blocks per second.",
-"mandatory.speedometer.bg_color": "Background Color",
-"mandatory.speedometer.border_color": "Border Color",
-"mandatory.speedometer.text_color": "Text Color",
-"mandatory.speedometer.text_shadow": "Text Shadow",
-"mandatory.speedometer.text_scale": "Text Scale",
-"mandatory.speedometer.show_background": "Show Background",
-"mandatory.speedometer.show_vertical": "Show Vertical Speed",
-"mandatory.speedometer.show_max": "Show Max Speed",
-"mandatory.speedometer.show_bar": "Show Bar",
-"mandatory.speedometer.bar_max_speed": "Bar Max (BPS)",
-"mandatory.speedometer.decimal_places": "Decimal Places",
-"mandatory.speedometer.smoothing": "Smoothing",
-"mandatory.speedometer.color_slow": "Color Slow (<2 BPS)",
-"mandatory.speedometer.color_walk": "Color Walk (2-5 BPS)",
-"mandatory.speedometer.color_sprint": "Color Sprint (5-8 BPS)",
-"mandatory.speedometer.color_fast": "Color Fast (>8 BPS)",
-"mandatory.speedometer.show_reference": "Show Reference",
-"mandatory.speedometer.hide_when_still": "Hide When Still"
+"noctra.speedometer.name": "Speedometer",
+"noctra.speedometer.description": "Shows your current movement speed in blocks per second.",
+"noctra.speedometer.bg_color": "Background Color",
+"noctra.speedometer.border_color": "Border Color",
+"noctra.speedometer.text_color": "Text Color",
+"noctra.speedometer.text_shadow": "Text Shadow",
+"noctra.speedometer.text_scale": "Text Scale",
+"noctra.speedometer.show_background": "Show Background",
+"noctra.speedometer.show_vertical": "Show Vertical Speed",
+"noctra.speedometer.show_max": "Show Max Speed",
+"noctra.speedometer.show_bar": "Show Bar",
+"noctra.speedometer.bar_max_speed": "Bar Max (BPS)",
+"noctra.speedometer.decimal_places": "Decimal Places",
+"noctra.speedometer.smoothing": "Smoothing",
+"noctra.speedometer.color_slow": "Color Slow (<2 BPS)",
+"noctra.speedometer.color_walk": "Color Walk (2-5 BPS)",
+"noctra.speedometer.color_sprint": "Color Sprint (5-8 BPS)",
+"noctra.speedometer.color_fast": "Color Fast (>8 BPS)",
+"noctra.speedometer.show_reference": "Show Reference",
+"noctra.speedometer.hide_when_still": "Hide When Still"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/speedometer.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/speedometer.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Stilisiertes Tachometer-Zifferblatt in Pixel-Art. Zeiger zeigt nach rechts (schnell). Grüne Beschleunigungsfarbe.

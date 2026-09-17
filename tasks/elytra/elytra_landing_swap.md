@@ -4,12 +4,12 @@
 **Category:** ELYTRA  
 **Status:** [x] DONE  
 **Class:** `modules/impl/elytra_landing_swap/ElytraLandingSwapModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.elytra_landing_swap`
+**Package:** `de.snenjih.noctra.modules.impl.elytra_landing_swap`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/elytra_landing_swap/ElytraLandingSwapModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.elytra_landing_swap`
+- Package: `de.snenjih.noctra.modules.impl.elytra_landing_swap`
 - Implementiert HudElement: Nein
 - Logik: `onClientTick` — erkennt Landung und führt Inventory-Swap durch
 
@@ -240,16 +240,16 @@ PlayerScreenHandler clickSlot-Index:
 ## Translation Keys
 
 ```json
-"mandatory.elytra_landing_swap.name": "Landing Swap",
-"mandatory.elytra_landing_swap.description": "Automatically swaps elytra for chestplate before landing.",
-"mandatory.elytra_landing_swap.trigger_speed": "Trigger Speed (b/s)",
-"mandatory.elytra_landing_swap.lookahead_distance": "Look-ahead Distance (m)",
-"mandatory.elytra_landing_swap.swap_back": "Auto Swap Back"
+"noctra.elytra_landing_swap.name": "Landing Swap",
+"noctra.elytra_landing_swap.description": "Automatically swaps elytra for chestplate before landing.",
+"noctra.elytra_landing_swap.trigger_speed": "Trigger Speed (b/s)",
+"noctra.elytra_landing_swap.lookahead_distance": "Look-ahead Distance (m)",
+"noctra.elytra_landing_swap.swap_back": "Auto Swap Back"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/elytra_landing_swap.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/elytra_landing_swap.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Elytra-Silhouette oben mit Pfeil nach unten, der in eine Chestplate übergeht.
 Alternativ zwei überlagerte Rüstungs-Symbole mit einem Austausch-Pfeil. Pixel-Art,

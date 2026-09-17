@@ -4,14 +4,14 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/scoreboard_hud/ScoreboardHudModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.scoreboard_hud`
+**Package:** `de.snenjih.noctra.modules.impl.scoreboard_hud`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/scoreboard_hud/ScoreboardHudModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.scoreboard_hud`
+- Package: `de.snenjih.noctra.modules.impl.scoreboard_hud`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 
 ## Description
 
@@ -118,18 +118,18 @@ onRenderHud(DrawContext ctx, RenderTickCounter counter):
 ## Translation Keys
 
 ```json
-"mandatory.scoreboard_hud.name": "Scoreboard HUD",
-"mandatory.scoreboard_hud.description": "Replaces the vanilla scoreboard sidebar with a customizable HUD element.",
-"mandatory.scoreboard_hud.hud_x": "HUD X",
-"mandatory.scoreboard_hud.hud_y": "HUD Y",
-"mandatory.scoreboard_hud.text_scale": "Text Scale",
-"mandatory.scoreboard_hud.background_alpha": "Background Alpha",
-"mandatory.scoreboard_hud.max_entries": "Max Entries",
-"mandatory.scoreboard_hud.hide_vanilla": "Hide Vanilla"
+"noctra.scoreboard_hud.name": "Scoreboard HUD",
+"noctra.scoreboard_hud.description": "Replaces the vanilla scoreboard sidebar with a customizable HUD element.",
+"noctra.scoreboard_hud.hud_x": "HUD X",
+"noctra.scoreboard_hud.hud_y": "HUD Y",
+"noctra.scoreboard_hud.text_scale": "Text Scale",
+"noctra.scoreboard_hud.background_alpha": "Background Alpha",
+"noctra.scoreboard_hud.max_entries": "Max Entries",
+"noctra.scoreboard_hud.hide_vanilla": "Hide Vanilla"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/scoreboard_hud.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/scoreboard_hud.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Stilisierte Ranglisten-Tabelle (drei horizontale Striche mit Nummern 1/2/3 links). Farbe: Weiß/Gelb auf dunklem Hintergrund.

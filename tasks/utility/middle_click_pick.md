@@ -174,15 +174,15 @@ private void switchHotbarTo(MinecraftClient client, ClientPlayerEntity player, i
 ## Translation Keys
 
 ```json
-"mandatory.middle_click_pick.name": "Middle Click Pick",
-"mandatory.middle_click_pick.description": "Pick up targeted blocks from your inventory by middle-clicking, like in Creative mode.",
-"mandatory.middle_click_pick.search_inventory": "Search Inventory",
-"mandatory.middle_click_pick.prefer_full_stack": "Prefer Full Stack",
-"mandatory.middle_click_pick.switch_to_existing": "Switch Hotbar Slot"
+"noctra.middle_click_pick.name": "Middle Click Pick",
+"noctra.middle_click_pick.description": "Pick up targeted blocks from your inventory by middle-clicking, like in Creative mode.",
+"noctra.middle_click_pick.search_inventory": "Search Inventory",
+"noctra.middle_click_pick.prefer_full_stack": "Prefer Full Stack",
+"noctra.middle_click_pick.switch_to_existing": "Switch Hotbar Slot"
 ```
 
 ## Icon
 
-**Path:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/middle_click_pick.png`  
+**Path:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/middle_click_pick.png`  
 **Size:** 32×32 PNG  
 **Suggestion:** A mouse with the scroll wheel / middle button highlighted in a bright color (white or yellow glow), with a small block icon (stone or grass) appearing above the cursor to indicate "pick." Clean, recognizable silhouette on a dark background.

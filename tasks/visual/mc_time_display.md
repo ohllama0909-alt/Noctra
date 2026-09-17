@@ -4,14 +4,14 @@
 **Category:** VISUAL  
 **Status:** [x] DONE  
 **Class:** `modules/impl/mc_time_display/McTimeDisplayModule.java`  
-**Package:** `de.snenjih.mandatory.modules.impl.mc_time_display`
+**Package:** `de.snenjih.noctra.modules.impl.mc_time_display`
 
 ## System Notes (Updated)
 
 - Module Ordner: `modules/impl/mc_time_display/McTimeDisplayModule.java`
-- Package: `de.snenjih.mandatory.modules.impl.mc_time_display`
+- Package: `de.snenjih.noctra.modules.impl.mc_time_display`
 - Implementiert HudElement: Ja — `extends BaseModule implements HudElement`
-- In `MandatoryMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
+- In `NoctraMod.onInitializeClient()`: `HudRegistry.register(module, defaultX, defaultY)`
 
 ## Description
 
@@ -114,17 +114,17 @@ onRenderHud(DrawContext ctx, RenderTickCounter counter):
 ## Translation Keys
 
 ```json
-"mandatory.mc_time_display.name": "MC Time Display",
-"mandatory.mc_time_display.description": "Shows Minecraft world time and day phase on the HUD.",
-"mandatory.mc_time_display.show_day_number": "Show Day Number",
-"mandatory.mc_time_display.show_phase": "Show Phase",
-"mandatory.mc_time_display.hud_x": "HUD X",
-"mandatory.mc_time_display.hud_y": "HUD Y",
-"mandatory.mc_time_display.time_format": "Time Format"
+"noctra.mc_time_display.name": "MC Time Display",
+"noctra.mc_time_display.description": "Shows Minecraft world time and day phase on the HUD.",
+"noctra.mc_time_display.show_day_number": "Show Day Number",
+"noctra.mc_time_display.show_phase": "Show Phase",
+"noctra.mc_time_display.hud_x": "HUD X",
+"noctra.mc_time_display.hud_y": "HUD Y",
+"noctra.mc_time_display.time_format": "Time Format"
 ```
 
 ## Icon
 
-**Pfad:** `src/main/resources/assets/mandatory/textures/gui/sprites/modules/mc_time_display.png`  
+**Pfad:** `src/main/resources/assets/noctra/textures/gui/sprites/modules/mc_time_display.png`  
 **Größe:** 32×32 PNG  
 **Vorschlag:** Analoguhr oder Sonnensymbol mit einer digitalen Zeitanzeige. Farbe: Gold/Gelb für die Sonne, Dunkelblau für den Hintergrund.
